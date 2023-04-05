@@ -268,24 +268,52 @@ size_class_heatmap <- function(mat1=scls, vid=vid1, br=20, variables=rl1$variabl
 ############################
 
 # paths
+## ==> OBS data
 wd_obs  <- '/mnt/disk2/Research_Projects/FACE_modelling/Phase_3/data/processed_response'
+wd_obs  <-  '/Users/ud4/Documents/FATESMDS/Models/obs_data'
+## <==!
+
+# Local root (Change - user file storage dependent)
+## ==>
 root    <- '/Volumes/disk2/Research_Projects/FATES/runs/FACE/'
-wd_src  <- paste(root,'FATESFACE_analysis', sep='/' )
+root    <- '/Users/ud4/Documents/FATESMDS/Models/FATES/runs/FACE/'
+## <==!
+
+wd_src  <- paste0(root,'FATESFACE_analysis' )
+
+# Enter of model run date (Change)
+## ==>
 moddate_ens <- '220207'
 moddate     <- '220207'
+
+moddate_ens <- '221031'
+moddate     <- '221031'
+## <==!
+
 wdo         <- paste0(root,moddate,'/plots')
 if(!file.exists(wdo)) dir.create(wdo)
 wdo_ens <- paste0(root,moddate_ens,'/plots')
 
 moddate_ens_struct <- '211007'
+
+# Enter Directory name / namelist (Change)
+## ==>
 caseidprefix_gen_ens_struct <- 'FACEbase_nutrients'
+caseidprefix_gen_ens_struct <- 'Bharat_Test1'
+# 'Bharat_Test1_US-ORN_I1850ELMFATES_ad_spinup'
+# "Bharat_Test1_US-ORN_I1850ELMFATES_ad_spinup.elm.h0.concatenated.nc"
+## <==!
+
 ensemble <- 'FACE_ensembleCNP_RD_processed'
 
-
-
 # load functions etc
+## ==> I think this should be change to repo head
 setwd(wd_src)
+wd_src_repo <- '/Users/ud4/repos/GitHub/FATESFACE/'
+setwd(wd_src_repo)
 source('functions_FATESFACE.R')
+## <==!
+
 # plotting settings - yet to be added into plotlist
 # also figure out how to insert variables into expressions
 colrs      <- rep(c(viridis(10)[3],viridis(10)[7]), each=2 ) 
@@ -308,7 +336,7 @@ years        <- list(
   `US-ORN` = 1998:2008
 ) 
 
-# ensemble
+# ensemble 'caseidprefix_gen_ens'
 caseidprefix_gen_ens <- 'FACE_ensembleCNP_RD-ECA'
 caseidprefix_var_ens <- c('RD', 'ECA' )
 caseidprefix_ens     <- paste(caseidprefix_gen_ens, caseidprefix_var_ens, sep='_' )
@@ -331,13 +359,13 @@ setwd(wd_obs)
 df_co2 <- read.csv('site_annual_CO2.csv')
 df_co2$co2 <- as.factor(df_co2$co2)
 levels(df_co2$co2) <- c('AMB','ELE')
-names(df_co2)
+#names(df_co2)
 names(df_co2)[1] <- 'YEAR'
 
 ifile <- 'OBS_ax.rds'
 df_obs <- readRDS(ifile)
-str(df_obs)
-names(df_obs)
+#str(df_obs)
+#names(df_obs)
 df_obs <- df_obs %>% 
   left_join(df_co2, by=c('site','YEAR','co2'), suffix=c('','.real') ) %>%
   filter(site=='DUKE'|site=='ORNL')
@@ -490,6 +518,8 @@ list.files()
 ens_file <- list.files()[1]
 # this will have to vary with the run being read and the ensemble type to be processed 
 # ens_file  <- 'FACE_ensembleCNP_RD_US-ORN_spins_UQconcatenated.RDS'
+
+"Bharat_Test1_US-ORN_I1850ELMFATES_ad_spinup.elm.h0.concatenated.nc"
 l2 <- readRDS(ens_file)
 names(l2)
 

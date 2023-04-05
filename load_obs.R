@@ -7,7 +7,9 @@
 #
 #############################################
 
-wd_obs  <- '/mnt/disk2/Research_Projects/FACE_modelling/Phase_3/data/processed_response'
+#wd_obs  <- '/mnt/disk2/Research_Projects/FACE_modelling/Phase_3/data/processed_response'
+
+wd_obs  <- '/Users/ud4/Documents/FACEMDS/Models/obs_data' # bs
 setwd(wd_obs)
 
 

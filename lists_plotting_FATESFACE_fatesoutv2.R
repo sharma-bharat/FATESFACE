@@ -341,7 +341,8 @@ var_labs <- list(
     fvar_obs = 'NPP',
     amb = list(
       ylab = expression('NPP [gC '*m^-2*y^-1*']'),
-      ylim = c(500,1500)
+      # ylim = c(500,1500) #AW
+      ylim = c(00,2000) #BS
     ),
     resp = list(
       ylab = expression('NPP response [gC '*m^-2*y^-1*']'),
@@ -349,11 +350,11 @@ var_labs <- list(
     ),
     perc = list(
       ylab = 'NPP response [%]',
-      ylim = c(0,50)
+      ylim = c(0,100)
     ),
     beta = list(
       ylab = expression('NPP '*beta*' [-]'),
-      ylim = c(0,1.3)
+      ylim = c(0,2)
     )
   ),
   
@@ -364,7 +365,8 @@ var_labs <- list(
     fvar_obs = 'NPP',
     amb = list(
       ylab = expression('Biomass Production [gC '*m^-2*y^-1*']'),
-      ylim = c(500,1500)
+      # ylim = c(500,1500) #AW
+      ylim = c(00,2000) #BS
     ),
     resp = list(
       ylab = expression('Biomass Production response [gC '*m^-2*y^-1*']'),
@@ -372,11 +374,11 @@ var_labs <- list(
     ),
     perc = list(
       ylab = 'Biomass Production response [%]',
-      ylim = c(0,50)
+      ylim = c(0,100)
     ),
     beta = list(
       ylab = expression('Biomass Production '*beta*' [-]'),
-      ylim = c(0,1.3)
+      ylim = c(0,2)
     )
   ),
   
@@ -387,7 +389,8 @@ var_labs <- list(
     fvar_obs = 'NPP',
     amb = list(
       ylab = expression('BP inc. store [gC '*m^-2*y^-1*']'),
-      ylim = c(500,1500)
+      # ylim = c(500,1500) # AW
+      ylim = c(00,2000) # BS
     ),
     resp = list(
       ylab = expression('BP inc. store response [gC '*m^-2*y^-1*']'),
@@ -395,11 +398,13 @@ var_labs <- list(
     ),
     perc = list(
       ylab = 'BP inc. store response [%]',
-      ylim = c(0,50)
+      # ylim = c(0,50) #AW
+      ylim = c(0,100) #BS
     ),
     beta = list(
       ylab = expression('BP inc. store '*beta*' [-]'),
-      ylim = c(0,1.3)
+      # ylim = c(0,1.3) #AW
+      ylim = c(0,3.3) #BS
     )
   ),
   
@@ -413,7 +418,7 @@ var_labs <- list(
     ),
     resp = list(
       ylab = expression('Plant N uptake response [gN '*m^-2*y^-1*']'),
-      ylim = c(-5,5)
+      ylim = c(-3,5)
     ),
     perc = list(
       ylab = 'Plant N uptake response [%]',
@@ -475,11 +480,12 @@ var_labs <- list(
     fvar_obs = 'GW',
     amb = list(
       ylab = expression('Wood production [gC '*m^-2*y^-1*']'),
-      ylim = c(0,1000)
+      # ylim = c(0,1000) #AW
+      ylim = c(0,1000) #BS
     ),
     resp = list(
       ylab = expression('Wood production response [gC '*m^-2*y^-1*']'),
-      ylim = c(-100,1000)
+      ylim = c(-100,600)
     ),
     perc = list(
       ylab = 'Wood production response [%]',
@@ -523,7 +529,8 @@ var_labs <- list(
     ),
     resp = list(
       ylab = expression('Fine-root production response [gC '*m^-2*y^-1*']'),
-      ylim = c(0,100)
+      # ylim = c(0,100) #AW
+      ylim = c(0,300) #BS
     ),
     perc = list(
       ylab = 'Fine-root production response [%]',
@@ -549,7 +556,7 @@ var_labs <- list(
     ),
     perc = list(
       ylab = expression('Fine-root allocation frac. response [%]'),
-      ylim = c(-60,130)
+      ylim = c(-60,200)
     ),
     beta = list(
       ylab = expression('Fine-root allocation frac. '*beta*' [-]'),
@@ -563,7 +570,8 @@ var_labs <- list(
     fvar_obs = 'LEAF_FROOT_ratio',
     amb = list(
       ylab = expression('Leaf:Fine-root [-]'),
-      ylim = c(0.25,7)
+      #ylim = c(0.25,7) #AW
+      ylim = c(0.25,12) #BS
     ),
     resp = list(
       ylab = expression('Leaf:Fine-root response [-]'),

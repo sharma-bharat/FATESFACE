@@ -429,17 +429,19 @@ plot_figures <- function(plots, plotname='plots', func='pdf',
 # plot model & obs data
 #################################
 
-fsite <- 'DUKE'
-fvar  <- 'FATES_NPP'
-fco2  <- 'AMB'
-fvarmod=fvar
-lmod=l1
+#fsite <- 'DUKE'
+#fvar  <- 'FATES_NPP'
+#fco2  <- 'AMB'
+#fvarmod=fvar
+#lmod=l1
 
 dimnames(l1[[caseidprefix[1]]][[sites[1]]]$aCO2)$vars
 
+#
+
 plot_modobs <- function(lmod=l1, df_obs, df_obsse, labs,
                         fsite, fvar=NULL, fvarmod=fvar, fco2, aco2.se=2.5, eco2.se=10,
-                        sites, years, caseidprefix, key.columns=2
+                        sites, years, caseidprefix, key.columns=2, MF='',Logging=''
                         ) {
   
   if(fsite=='DUKE') fsite_mod <- 'US-DUK'
@@ -454,7 +456,7 @@ plot_modobs <- function(lmod=l1, df_obs, df_obsse, labs,
   }
   print(paste(fvar,fvarmod))
   
-  
+  #print(paste(MF,Logging,sep = ','))
   # extract model data and calculate responses
   lp      <- calc_plot_vectors(lmod, fvarmod, caseidprefix, sites, years )
   lp_resp <- calc_responseplot_vectors(lmod, fvarmod, caseidprefix, sites, years, func='all' )
@@ -499,13 +501,23 @@ plot_modobs <- function(lmod=l1, df_obs, df_obsse, labs,
   dfoa     <- dfoa[is.finite(dfoa$vy),]
   dfo_resp <- dfo_resp[is.finite(dfo_resp$vy),]
   
-  
-  # plots - abient or elevate treatment ... could modify to do both.
+  # # Hack BS :  Shorten the legend names >>>
+  lp$caseid <- gsub(paste0(caseidprefix_gen,"_ECA"), paste0(Logging,"_MF",MF,"_ECA"), lp$caseid)
+  lp$caseid <- gsub(paste0(caseidprefix_gen,"_RD"), paste0(Logging,"_MF",MF,"_RD"), lp$caseid)
+  lp$caseid <- gsub(paste0(caseidprefix_gen), paste0(Logging,"_MF",MF,"_C"), lp$caseid)
+
+  # df_lp <- as.data.frame(lp)
+  # <<<< Hack BS :  Shorten the legend names
+
+  ### > Maybe add an if statement to differentciate between earlier version of plots and my plots
+
+  #plots - abient or elevate treatment ... could modify to do both.
   pamb <- 
-    xyplot(lp$vy ~ lp$vx, groups=lp$caseid, subset=lp$sites==fsite_mod_co2,
-           type='l', scales=list(tck=c(-0.5,-0.5), alternating=F, x=list(at=seq(1996,2008,4)) ),
+    xyplot(lp$vy ~ lp$vx|lp$sites, groups=lp$caseid, subset=lp$sites==fsite_mod_co2,
+           type='b', scales=list(tck=c(-0.5,-0.5), alternating=F, x=list(at=seq(1996,2008,4)) ),
            xlab='Year', xlim=c(1995,2009),
-           ylab=labs$amb$ylab, ylim=labs$amb$ylim,
+           ylab=labs$amb$ylab, # ylabel: from "lists_plotting_FATESFACE_fatesoutv2.R"
+           ylim=labs$amb$ylim, # ylim: from "lists_plotting_FATESFACE_fatesoutv2.R"
            par.settings=simpleTheme(col=viridis(3), lwd=2, lty=1 ),
            panel=function(...) {
              panel.polygon(c(dfoa$YEAR,rev(dfoa$YEAR)),
@@ -521,11 +533,42 @@ plot_modobs <- function(lmod=l1, df_obs, df_obsse, labs,
                          border=T, cex=0.75, background='white')
     )
   pamb
+
+    # plots - abient or elevate treatment ... could modify to do both.
+
+  # pamb <- 
+  #   xyplot(vy~vx|sites, groups=caseid, data= df_lp, subset=lp$sites==fsite_mod_co2, 
+  #     #          type='l', scales=list(tck=c(-0.5,-0.5), alternating=F, x=list(at=seq(1996,2008,4)) ),
+  #          xlab='Year', xlim=c(1995,2009),
+  #          ylab=labs$amb$ylab, # ylabel: from "lists_plotting_FATESFACE_fatesoutv2.R"
+  #          ylim=labs$amb$ylim, # ylim: from "lists_plotting_FATESFACE_fatesoutv2.R"
+  #          par.settings=simpleTheme(col=viridis(3), lwd=2, lty=1 ),
+  #          panel=function(...) {
+  #            panel.polygon(c(dfoa$YEAR,rev(dfoa$YEAR)),
+  #                          c(dfoa$vy+1.96*dfoa$vy.se, rev(dfoa$vy-1.96*dfoa$vy.se)),
+  #                          border=F, col='grey90')
+  #            panel.polygon(c(dfoa$YEAR,rev(dfoa$YEAR)),
+  #                          c(dfoa$vy+dfoa$vy.se, rev(dfoa$vy-dfoa$vy.se)),
+  #                          border=F, col='grey80')
+  #            panel.points(dfoa$YEAR,dfoa$vy, type='l', col='black', lwd=3 )
+  #            panel.xyplot(...)
+  #          },
+  #          auto.key=list(lines=T, points=F, corner=c(0,0), x=0, y=1, columns=key.columns,
+  #                        border=T, cex=0.75, background='white')
+  #   )
+  # pamb
   
+
+
+  # # Hack BS :  Shorten the legend names >>>
+  lp_resp$caseid <- gsub(paste0(caseidprefix_gen,"_ECA"), paste0(Logging,"_MF",MF,"_ECA"), lp_resp$caseid)
+  lp_resp$caseid <- gsub(paste0(caseidprefix_gen,"_RD"), paste0(Logging,"_MF",MF,"_RD"), lp_resp$caseid)
+  lp_resp$caseid <- gsub(paste0(caseidprefix_gen), paste0(Logging,"_MF",MF,"_C"), lp_resp$caseid)
+
   # absolute response
   presp1 <- 
-    xyplot(lp_resp$vy ~ lp_resp$vx, groups=lp_resp$caseid, subset=lp_resp$sites==fsite_mod,
-           type='l', scales=list(tck=c(-0.5,-0.5), alternating=F, x=list(at=seq(1996,2008,4)) ),
+    xyplot(lp_resp$vy ~ lp_resp$vx|lp_resp$sites, groups=lp_resp$caseid, subset=lp_resp$sites==fsite_mod,
+           type='b', scales=list(tck=c(-0.5,-0.5), alternating=F, x=list(at=seq(1996,2008,4)) ),
            xlab='Year', xlim=c(1995,2009),
            ylab=labs$resp$ylab, ylim=labs$resp$ylim,
            par.settings=simpleTheme(col=viridis(3), lwd=2, lty=1 ),
@@ -543,11 +586,38 @@ plot_modobs <- function(lmod=l1, df_obs, df_obsse, labs,
                          border=T, cex=0.75, background='white')
     )
   presp1
+
+
+
+  # df_lp_resp <- as.data.frame(lp_resp)
+  # # <<<< Hack BS :  Shorten the legend names
+  # # absolute response
+  # presp1 <- 
+  #   xyplot(vy~vx|sites, groups=caseid, data= df_lp_resp, subset=lp_resp$sites==fsite_mod, 
+  #   # lp_resp$vy ~ lp_resp$vx, groups=lp_resp$caseid, subset=lp_resp$sites==fsite_mod,
+  #          type='l', scales=list(tck=c(-0.5,-0.5), alternating=F, x=list(at=seq(1996,2008,4)) ),
+  #          xlab='Year', xlim=c(1995,2009),
+  #          ylab=labs$resp$ylab, ylim=labs$resp$ylim,
+  #          par.settings=simpleTheme(col=viridis(3), lwd=2, lty=1 ),
+  #          panel=function(...) {
+  #            panel.polygon(c(dfo_resp$YEAR,rev(dfo_resp$YEAR)),
+  #                          c(dfo_resp$resp_abs+1.96*dfo_resp$resp_abs.se, rev(dfo_resp$resp_abs-1.96*dfo_resp$resp_abs.se)),
+  #                          border=F, col='grey90')
+  #            panel.polygon(c(dfo_resp$YEAR, rev(dfo_resp$YEAR)),
+  #                          c(dfo_resp$resp_abs+dfo_resp$resp_abs.se, rev(dfo_resp$resp_abs-dfo_resp$resp_abs.se)),
+  #                          border=F, col='grey80')
+  #            panel.points(dfo_resp$YEAR,dfo_resp$resp_abs, type='l', col='black', lwd=3 )
+  #            panel.xyplot(...)
+  #          },
+  #          auto.key=list(lines=T, points=F, corner=c(0,0), x=0, y=1, columns=key.columns,
+  #                        border=T, cex=0.75, background='white')
+  #   )
+  # presp1
   
   # percent response
   presp2 <- 
-    xyplot(lp_resp$vy_perc ~ lp_resp$vx, groups=lp_resp$caseid, subset=lp_resp$sites==fsite_mod,
-           type='l', scales=list(tck=c(-0.5,-0.5), alternating=F, x=list(at=seq(1996,2008,4)) ),
+    xyplot(lp_resp$vy_perc ~ lp_resp$vx|lp_resp$sites, groups=lp_resp$caseid, subset=lp_resp$sites==fsite_mod,
+           type='b', scales=list(tck=c(-0.5,-0.5), alternating=F, x=list(at=seq(1996,2008,4)) ),
            xlab='Year', xlim=c(1995,2009), 
            ylab=labs$perc$ylab, ylim=labs$perc$ylim,
            par.settings=simpleTheme(col=viridis(3), lwd=2, lty=1 ),
@@ -565,11 +635,34 @@ plot_modobs <- function(lmod=l1, df_obs, df_obsse, labs,
                          border=T, cex=0.75, background='white')
     )
   presp2
+
+  #   # percent response
+  # presp2 <- 
+  #   xyplot(vy~vx|sites, groups=caseid, data= df_lp_resp, subset=lp_resp$sites==fsite_mod,
+  #     #lp_resp$vy_perc ~ lp_resp$vx, groups=lp_resp$caseid, subset=lp_resp$sites==fsite_mod,
+  #          type='l', scales=list(tck=c(-0.5,-0.5), alternating=F, x=list(at=seq(1996,2008,4)) ),
+  #          xlab='Year', xlim=c(1995,2009), 
+  #          ylab=labs$perc$ylab, ylim=labs$perc$ylim,
+  #          par.settings=simpleTheme(col=viridis(3), lwd=2, lty=1 ),
+  #          panel=function(...) {
+  #            panel.polygon(c(dfo_resp$YEAR, rev(dfo_resp$YEAR) ),
+  #                          c(dfo_resp$resp_pct+1.96*dfo_resp$resp_pct.se, rev(dfo_resp$resp_pct-1.96*dfo_resp$resp_pct.se)),
+  #                          border=F, col='grey90')
+  #            panel.polygon(c(dfo_resp$YEAR, rev(dfo_resp$YEAR)),
+  #                          c(dfo_resp$resp_pct+dfo_resp$resp_pct.se, rev(dfo_resp$resp_pct-dfo_resp$resp_pct.se)),
+  #                          border=F, col='grey80')
+  #            panel.points(dfo_resp$YEAR,dfo_resp$resp_pct, type='l', col='black', lwd=3 )
+  #            panel.xyplot(...)
+  #          },
+  #          auto.key=list(lines=T, points=F, corner=c(0,0), x=0, y=1, columns=key.columns,
+  #                        border=T, cex=0.75, background='white')
+  #   )
+  # presp2
   
   # beta response
   presp3 <- 
-    xyplot(lp_resp$vy_beta ~ lp_resp$vx, groups=lp_resp$caseid, subset=lp_resp$sites==fsite_mod,
-           type='l', scales=list(tck=c(-0.5,-0.5), alternating=F, x=list(at=seq(1996,2008,4)) ),
+    xyplot(lp_resp$vy_beta ~ lp_resp$vx|lp_resp$sites, groups=lp_resp$caseid, subset=lp_resp$sites==fsite_mod,
+           type='b', scales=list(tck=c(-0.5,-0.5), alternating=F, x=list(at=seq(1996,2008,4)) ),
            xlab='Year', xlim=c(1995,2009), 
            ylab=labs$beta$ylab, ylim=labs$beta$ylim,
            par.settings=simpleTheme(col=viridis(3), lwd=2, lty=1 ),
@@ -587,6 +680,29 @@ plot_modobs <- function(lmod=l1, df_obs, df_obsse, labs,
                          border=T, cex=0.75, background='white')
     )
   presp3
+
+  #   # beta response
+  # presp3 <- 
+  #   xyplot(vy~vx|sites, groups=caseid, data= df_lp_resp, subset=lp_resp$sites==fsite_mod,
+  #     #lp_resp$vy_beta ~ lp_resp$vx, groups=lp_resp$caseid, subset=lp_resp$sites==fsite_mod,
+  #          type='l', scales=list(tck=c(-0.5,-0.5), alternating=F, x=list(at=seq(1996,2008,4)) ),
+  #          xlab='Year', xlim=c(1995,2009), 
+  #          ylab=labs$beta$ylab, ylim=labs$beta$ylim,
+  #          par.settings=simpleTheme(col=viridis(3), lwd=2, lty=1 ),
+  #          panel=function(...) {
+  #            panel.polygon(c(dfo_resp$YEAR,rev(dfo_resp$YEAR)),
+  #                          c(dfo_resp$resp_beta+1.96*dfo_resp$resp_beta.se, rev(dfo_resp$resp_beta-1.96*dfo_resp$resp_beta.se)),
+  #                          border=F, col='grey90')
+  #            panel.polygon(c(dfo_resp$YEAR, rev(dfo_resp$YEAR)),
+  #                          c(dfo_resp$resp_beta+dfo_resp$resp_beta.se, rev(dfo_resp$resp_beta-dfo_resp$resp_beta.se)),
+  #                          border=F, col='grey80')
+  #            panel.points(dfo_resp$YEAR,dfo_resp$resp_beta, type='l', col='black', lwd=3 )
+  #            panel.xyplot(...)
+  #          },
+  #          auto.key=list(lines=T, points=F, corner=c(0,0), x=0, y=1, columns=key.columns,
+  #                        border=T, cex=0.75, background='white')
+  #   )
+  # presp3
   
   
   list(pamb,presp1,presp2,presp3, dfo, dfo_resp )
