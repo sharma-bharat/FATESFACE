@@ -3,6 +3,14 @@ by Bharat Sharma and Anthony Walker
 sharmabd@ornl.gov
 =============================
 
+## Fixing the duplicate time index
+There are some duplicate/incorrect time information in the original data in the year 2007 and 2009 across all variables. <br>
+We wrote a code to fix the files : `FixingDupicateDuke.py` <br>
+Usage example:
+`python FixingDupicateDuke.py -file_ci /Users/ud4/repos/GitHub/FATESFACE/Jupyter_Notebooks/DuplicateDukeDataCorrectIndexOnly.txt -path_data /Users/ud4/Documents/FACEMDS/MET_Data_Processing/Oren_2022_DUKE_Met/data/ -replace_file yes` <br>
+This will replace tge gap filled files with correct values <br>
+You will also need to download the file `DuplicateDukeDataCorrectIndexOnly.txt` <br>
+
 ## Sub-hourly
 
 ### Variable "AT" 
