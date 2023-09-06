@@ -64,17 +64,23 @@ filled by using NARR (North American Regional Reanalysis) data',
 'SLT_f':'gap-filling flag', 
 }
 
+# Units of Saving File Format
+# Change: Rainf, mm to kg/m2/s; factor_add = 0,  factor_multiple = 1;  
+# Change: Tair,  deg C to K   ; factor_add = 273.15,  factor_multiple = 1;
+# Change: RH,    '' to %      ; factor_add = 0,  factor_multiple = 100;
+# Change: VPD,   kPa to Pa    ; factor_add = 0,  factor_multiple = 1000;
+# Change: SLT,    deg C to K   ; factor_add = 273.15,  factor_multiple = 1;
 dict_units = {
-    'Rainf':'mm',
-    'Tair':'deg C',
-    'RH':'',
-    'VPD':'kPa',
+    'Rainf':'kg/m2/s', # 'mm' = 'kg/m2/s'
+    'Tair':'K',
+    'RH':'%',
+    'VPD':'Pa',
     'PAR':'umol/m2/s',
     'SM':'',
     'SWP':'',
     'SVP':'kPa',
     'Rn':'umol/m2/s',
-    'SLT':'deg C'
+    'SLT':'K'
 }
 
 df_h = pd.DataFrame(columns=dict_cols.keys())
@@ -88,7 +94,22 @@ df_h[gap_fill_cols] = 0
 
 #DROPING THE LAST ROW
 df_h.drop(df_h.index[-1], inplace=True)
-
+for k_var in ['Rainf']:
+    factor_add = 0
+    factor_multiple = 1/(60*30) # From per day to per second for 48 timesteps in a day i.e. 24*60*60/48
+    df_h[k_var] = df_h[k_var]*factor_multiple+factor_add
+for k_var in ['Tair','SLT']:
+    factor_add = 273.15
+    factor_multiple = 1
+    df_h[k_var] = df_h[k_var]*factor_multiple+factor_add
+for k_var in ['RH']:
+    factor_add = 0
+    factor_multiple = 100
+    df_h[k_var] = df_h[k_var]*factor_multiple+factor_add
+for k_var in ['VPD']:
+    factor_add = 0
+    factor_multiple = 1000
+    df_h[k_var] = df_h[k_var]*factor_multiple+factor_add
 # Adding the unit row below first row
 unit_row = pd.Series([dict_units.get(col, '') for col in df_h.columns], index=df_h.columns)
 df_h_save = pd.concat([pd.DataFrame([unit_row]), df_h.iloc[:]]).reset_index(drop=True)
@@ -105,18 +126,50 @@ df_h_wTime = df_h.copy(deep=True)
 df_h_wTime['Time'] = df_all_vars_30m['Date']
 df_h_wTime['Time'] = pd.to_datetime(df_h_wTime['Time'])
 df_h_wTime = df_h_wTime.set_index('Time')
-
+df_h_wTime
 # ----------------------------
 
 ## Creating DUKE_forcing_d.txt
+# by talking average across all variables except 
+# PAR, Rn, and Rainf where we computed the sum, resulting in Total daily metrics
 # ----------------------------
+
+# Units of Saving File Format
+# Change: Rainf, kg/m2/s to 'kg/m2/d'; factor_add = 0,  factor_multiple = 30*60 (b/c 24*60*60/48);  
+# Change: PAR/Rn, umol/m2/s to 'mol/m2/d'; factor_add = 0,  factor_multiple = 30*60 *10(--6);  
+dict_units_d = {
+    'Rainf':'kg/m2/d', # 'kg/m2/s' to 'kg/m2/d'
+    'Tair':'K',
+    'RH':'%',
+    'VPD':'Pa',
+    'PAR':'mol/m2/d',
+    'SM':'',
+    'SWP':'',
+    'SVP':'kPa',
+    'Rn':'mol/m2/d',
+    'SLT':'K'
+}
+
 # Using the datetime index to calculate means
 df_d_wTime = df_h_wTime.resample('D').mean()
 df_d_wTime= df_d_wTime.drop(['DTIME','HRMIN'], axis=1)
 df_d_wTime['DOY'] = round(df_d_wTime['DOY']).astype('int')
 
+# Using the datetime index to calculate means
+df_d_wTime = df_h_wTime.resample('D').mean()
+df_d_wTime= df_d_wTime.drop(['DTIME','HRMIN'], axis=1)
+df_d_wTime['DOY'] = round(df_d_wTime['DOY']).astype('int')
+
+# For Variables to convert from per second to per day if the original Tstep is of 30 mins
+factor_multiple_s2d = 30*60
+
 # For Rainf we need to take sum
-df_d_wTime['Rainf'] = df_h_wTime[['YEAR', 'DOY', 'Rainf']].resample('D').sum()['Rainf']
+df_d_wTime['Rainf'] = df_h_wTime[['YEAR', 'DOY', 'Rainf']].resample('D').sum()['Rainf'] * factor_multiple_s2d
+# For PAR we need to take sum
+df_d_wTime['PAR'] = df_h_wTime[['YEAR', 'DOY', 'PAR']].resample('D').sum()['PAR'] * factor_multiple_s2d *10**(-6)
+# For Rn we need to take sum
+df_d_wTime['Rn'] = df_h_wTime[['YEAR', 'DOY', 'Rn']].resample('D').sum()['Rn'] * factor_multiple_s2d *10**(-6)
+
 df_d_wTime['YEAR'] =  df_d_wTime['YEAR'].astype('int')
 
 # Reset index to columns
@@ -124,7 +177,7 @@ df_d = df_d_wTime.reset_index()
 df_d = df_d.drop('Time', axis =1)
 
 # Adding the unit row below first row
-unit_row = pd.Series([dict_units.get(col, '') for col in df_d.columns], index=df_d.columns)
+unit_row = pd.Series([dict_units_d.get(col, '') for col in df_d.columns], index=df_d.columns)
 df_d_save = pd.concat([pd.DataFrame([unit_row]), df_d.iloc[:]]).reset_index(drop=True)
 
 #Saving the dataframes
@@ -139,6 +192,20 @@ df_d_fv_save.to_csv(f"{paths['Save_Processed']}DUKE_forcing_d_fv.txt")
 
 ## Creating DUKE_forcing_y.txt
 # ----------------------------
+# Units of Saving File Format
+# Change: Rainf, kg/m2/d to 'kg/m2/y'; ;  
+dict_units_y = {
+    'Rainf':'kg/m2/y', # 'kg/m2/d' to 'kg/m2/y'
+    'Tair':'K',
+    'RH':'%',
+    'VPD':'Pa',
+    'PAR':'mol/m2/y',
+    'SM':'',
+    'SWP':'',
+    'SVP':'kPa',
+    'Rn':'mol/m2/y',
+    'SLT':'K'
+}
 # Using the datetime index to calculate means
 df_y_wTime = df_d_wTime.resample('Y').mean()
 df_y_wTime= df_y_wTime.drop('DOY', axis=1)
@@ -153,7 +220,7 @@ df_y = df_y_wTime.reset_index()
 df_y = df_y.drop('Time', axis =1)
 
 # Adding the unit row below first row
-unit_row = pd.Series([dict_units.get(col, '') for col in df_y.columns], index=df_y.columns)
+unit_row = pd.Series([dict_units_y.get(col, '') for col in df_y.columns], index=df_y.columns)
 df_y_save = pd.concat([pd.DataFrame([unit_row]), df_y.iloc[:]]).reset_index(drop=True)
 
 #Saving the dataframes
@@ -163,7 +230,6 @@ fill_value = -6999.
 df_y_fv_save = df_y_save.fillna(fill_value)
 df_y_fv_save.to_csv(f"{paths['Save_Processed']}DUKE_forcing_y_fv.csv")
 df_y_fv_save.to_csv(f"{paths['Save_Processed']}DUKE_forcing_y_fv.txt")
-
 
 # Making netcdf files
 
@@ -232,8 +298,8 @@ cols_netcdf_d = ['YEAR',
   'SLT']
 
 # Convert the DataFrame to an xarray Dataset
-df_h_wTime_fv = df_h_wTime.fillna(fill_value)
-ds = xr.Dataset.from_dataframe(df_h_wTime_fv[cols_netcdf_d])
+df_d_wTime_fv = df_d_wTime.fillna(fill_value)
+ds = xr.Dataset.from_dataframe(df_d_wTime_fv[cols_netcdf_d])
 ds = ds.expand_dims({'lat': 1}).assign_coords({'lat':[35.9782] })
 ds = ds.expand_dims({'lon': 1}).assign_coords({'lon':[-79.0942] })
 ds['lon'].attrs['units'] = "degrees_east"
@@ -246,11 +312,12 @@ ds['DOY'].attrs['units'] = ""
 ds['DOY'].attrs['long_name'] = "Day of Measurement"
 # Adding attributes to variables
 for k_var in cols_netcdf_h[-10:]: # looping of last 10 columns
-    ds[k_var].attrs['units'] = dict_units[k_var]
-    ds[k_var].attrs['missing_value'] = fill_value
-    ds[k_var].attrs['long_name'] = dict_cols[k_var]
-    ds[k_var].attrs['associate'] = "Time lat lon"
-    ds[k_var].attrs['axis'] = "TYX"
+    if True:
+        ds[k_var].attrs['units'] = dict_units_d[k_var]
+        ds[k_var].attrs['missing_value'] = fill_value
+        ds[k_var].attrs['long_name'] = dict_cols[k_var]
+        ds[k_var].attrs['associate'] = "Time lat lon"
+        ds[k_var].attrs['axis'] = "TYX"
 
 # Add global attributes to the Dataset
 ds.attrs['site_id'] = "DUKE"
@@ -258,9 +325,9 @@ ds.attrs['title'] = "Daily forcing data from DUKE Forest FACE, North Carolina, U
 ds.attrs['history'] = "File Origin - This file was created at Oak Ridge National Laboratory for FACE model data synthesis"
 ds.attrs['creation_date'] = "Aug 24, 2023" ;
 ds.attrs['contact'] = 'Bharat Sharma (sharmabd@ornl.gov), Anthony Walker (walkerp@ornl.gov)'
-ds.to_netcdf(f"{paths['Save_Processed']}DUKE_forcing_h.nc")
+ds.to_netcdf(f"{paths['Save_Processed']}DUKE_forcing_d.nc")
 
-print(f"Dataset saved to {paths['Save_Processed']}DUKE_forcing_h.nc")
+print(f"Dataset saved to {paths['Save_Processed']}DUKE_forcing_d.nc")
 
 ## Creating DUKE_forcing_y.nc
 
@@ -277,8 +344,8 @@ cols_netcdf_y = ['YEAR',
   'SLT']
 
 # Convert the DataFrame to an xarray Dataset
-df_h_wTime_fv = df_h_wTime.fillna(fill_value)
-ds = xr.Dataset.from_dataframe(df_h_wTime_fv[cols_netcdf_y])
+df_y_wTime_fv = df_y_wTime.fillna(fill_value)
+ds = xr.Dataset.from_dataframe(df_y_wTime_fv[cols_netcdf_y])
 ds = ds.expand_dims({'lat': 1}).assign_coords({'lat':[35.9782] })
 ds = ds.expand_dims({'lon': 1}).assign_coords({'lon':[-79.0942] })
 ds['lon'].attrs['units'] = "degrees_east"
@@ -289,11 +356,18 @@ ds['YEAR'].attrs['units'] = ""
 ds['YEAR'].attrs['long_name'] = "Year of Measurement"
 # Adding attributes to variables
 for k_var in cols_netcdf_h[-10:]: # looping of last 10 columns
-    ds[k_var].attrs['units'] = dict_units[k_var]
-    ds[k_var].attrs['missing_value'] = fill_value
-    ds[k_var].attrs['long_name'] = dict_cols[k_var]
-    ds[k_var].attrs['associate'] = "Time lat lon"
-    ds[k_var].attrs['axis'] = "TYX"
+    if k_var in ['PAR','Rn']:
+        ds[k_var].attrs['units'] = dict_units_y[k_var]
+        ds[k_var].attrs['missing_value'] = fill_value
+        ds[k_var].attrs['long_name'] = f"Mean {dict_cols[k_var]}"
+        ds[k_var].attrs['associate'] = "Time lat lon"
+        ds[k_var].attrs['axis'] = "TYX"        
+    else:
+        ds[k_var].attrs['units'] = dict_units_y[k_var]
+        ds[k_var].attrs['missing_value'] = fill_value
+        ds[k_var].attrs['long_name'] = dict_cols[k_var]
+        ds[k_var].attrs['associate'] = "Time lat lon"
+        ds[k_var].attrs['axis'] = "TYX"
 
 # Add global attributes to the Dataset
 ds.attrs['site_id'] = "DUKE"
@@ -301,6 +375,7 @@ ds.attrs['title'] = "Yearly forcing data from DUKE Forest FACE, North Carolina, 
 ds.attrs['history'] = "File Origin - This file was created at Oak Ridge National Laboratory for FACE model data synthesis"
 ds.attrs['creation_date'] = "Aug 24, 2023" ;
 ds.attrs['contact'] = 'Bharat Sharma (sharmabd@ornl.gov), Anthony Walker (walkerp@ornl.gov)'
-ds.to_netcdf(f"{paths['Save_Processed']}DUKE_forcing_h.nc")
+ds.to_netcdf(f"{paths['Save_Processed']}DUKE_forcing_y.nc")
 
 print(f"Dataset saved to {paths['Save_Processed']}DUKE_forcing_y.nc")
+
