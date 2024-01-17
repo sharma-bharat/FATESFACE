@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE x_tags PUBLIC "-//ORNLDAAC//DTD CDIAC:metadata//EN"
+"http://www-eosdis.ornl.gov/data/bluangel_harvest/CDIAC/metadata.dtd">
+
+<?ornlmercury Creation_datetime="20070731 124705"
+ Creation_IP="160.91.16.43" DTD_version="metadata10.dtd"
+ OME_version="Version 4.7.5, Revision Date: 04 Apr 2006"
+ simpleSaveXMLlength="4331"
+ File_revision="20070731 125622"?>
+<x_tags>
+ <Product_number><![CDATA[ORNL FACE BASAL AREA]]></Product_number>
+<Product_title><![CDATA[ORNL FACE Basal Area]]></Product_title>
+ <Author>
+  <Name><![CDATA[Norby, R.J.]]></Name>
+  <Company><![CDATA[Environmental Sciences Division]]></Company>
+  <Organization><![CDATA[Oak Ridge National Laboratory]]></Organization>
+ </Author>
+ <Author>
+  <Name><![CDATA[Tharp, M.L.]]></Name>
+  <Company><![CDATA[Environmental Sciences Division]]></Company>
+  <Organization><![CDATA[Oak Ridge National Laboratory]]></Organization>
+ </Author>
+ <Thematic_area><![CDATA[Vegetation response to CO2 and Climate]]></Thematic_area>
+ <Begin_date><![CDATA[19970311]]></Begin_date>
+ <End_date><![CDATA[20061127]]></End_date>
+ <North><![CDATA[35.9]]></North>
+ <South><![CDATA[35.9]]></South>
+ <East><![CDATA[-84.33]]></East>
+ <West><![CDATA[-84.33]]></West>
+ <Site_info>
+  <Site_name><![CDATA[Oak Ridge National Laboratory FACE Experiment]]></Site_name>
+  <Site_URL><![CDATA[http://public.ornl.gov/face/ORNL/ornl_home.shtml]]></Site_URL>
+  <Site_data_file><![CDATA[http://public.ornl.gov/face/ORNL/ornl_data_plantresponse.shtml]]></Site_data_file>
+ </Site_info>
+ <Data_site><![CDATA[http://public.ornl.gov/face/ORNL/ornl_data_plantresponse.shtml]]></Data_site>
+ <Variable><![CDATA[RING]]></Variable>
+ <Variable><![CDATA[TREE]]></Variable>
+ <Variable><![CDATA[BASAL AREA (cm2) by DDMMYYYY]]></Variable>
+ <Descriptive_file><![CDATA[http://cdiac.ess-dive.lbl.gov/ftp/FACE/ornldata/basal_area/basal_area.txt]]></Descriptive_file>
+ <Data_file><![CDATA[ba1997.dat]]></Data_file>
+ <Data_file><![CDATA[ba1998.dat]]></Data_file>
+ <Data_file><![CDATA[ba1999.dat]]></Data_file>
+ <Data_file><![CDATA[ba2000.dat]]></Data_file>
+ <Data_file><![CDATA[ba2001.dat]]></Data_file>
+ <Data_file><![CDATA[ba2002.dat]]></Data_file>
+ <Data_file><![CDATA[ba2003.dat]]></Data_file>
+ <Data_file><![CDATA[ba2004.dat]]></Data_file>
+ <Data_file><![CDATA[ba2005.dat]]></Data_file>
+ <Data_file><![CDATA[ba2006.dat]]></Data_file>
+ <Data_IO_file></Data_IO_file>
+ <Initial_date_of_data_publication><![CDATA[]]></Initial_date_of_data_publication>
+ <Most_recent_date_of_data_publication><![CDATA[20070710]]></Most_recent_date_of_data_publication>
+ <Keyword><![CDATA[carbon dioxide]]></Keyword>
+ <Keyword><![CDATA[CO2 enrichment]]></Keyword>
+ <Keyword><![CDATA[FACE]]></Keyword>
+ <Keyword><![CDATA[LAI]]></Keyword>
+ <Keyword><![CDATA[Leaf Area Index]]></Keyword>
+ <Keyword><![CDATA[ORNL FACE]]></Keyword>
+ <Keyword><![CDATA[sweetgum]]></Keyword>
+ <Keyword><![CDATA[Liquidambar Styraciflua]]></Keyword>
+ <Keyword><![CDATA[vegetation response]]></Keyword>
+ <Data_file_location><![CDATA[http://cdiac.ess-dive.lbl.gov/ftp/FACE/ornldata/basal_area/ba1997.dat]]></Data_file_location>
+ <Data_file_location><![CDATA[http://cdiac.ess-dive.lbl.gov/ftp/FACE/ornldata/basal_area/ba1998.dat]]></Data_file_location>
+ <Data_file_location><![CDATA[http://cdiac.ess-dive.lbl.gov/ftp/FACE/ornldata/basal_area/ba1999.dat]]></Data_file_location>
+ <Data_file_location><![CDATA[http://cdiac.ess-dive.lbl.gov/ftp/FACE/ornldata/basal_area/ba2000.dat]]></Data_file_location>
+ <Data_file_location><![CDATA[http://cdiac.ess-dive.lbl.gov/ftp/FACE/ornldata/basal_area/ba2001.dat]]></Data_file_location>
+ <Data_file_location><![CDATA[http://cdiac.ess-dive.lbl.gov/ftp/FACE/ornldata/basal_area/ba2002.dat]]></Data_file_location>
+ <Data_file_location><![CDATA[http://cdiac.ess-dive.lbl.gov/ftp/FACE/ornldata/basal_area/ba2003.dat]]></Data_file_location>
+ <Data_file_location><![CDATA[http://cdiac.ess-dive.lbl.gov/ftp/FACE/ornldata/basal_area/ba2004.dat]]></Data_file_location>
+ <Data_file_location><![CDATA[http://cdiac.ess-dive.lbl.gov/ftp/FACE/ornldata/basal_area/ba2005.dat]]></Data_file_location>
+ <Data_file_location><![CDATA[http://cdiac.ess-dive.lbl.gov/ftp/FACE/ornldata/basal_area/ba2006.dat]]></Data_file_location>
+ <Total_size_of_all_files><![CDATA[]]></Total_size_of_all_files>
+ <Distribution><![CDATA[external]]></Distribution>
+ <CDIAC_contact><![CDATA[Lisa Olsen; email: olsenlm@ornl.gov]]></CDIAC_contact>
+<Notes><![CDATA[Basal area data are available for 1997 through 2006.  The number of times
+trees were measured each year varies from six to nine, and the header 
+record in each annual file gives dates when the basal area values were 
+recorded.  The files include data for 5 plots (rings) on the FACE site.]]></Notes>
+</x_tags>

@@ -50,6 +50,8 @@ if(!file.exists(wdo)) dir.create(wdo)
 #caseidprefix_gen <- 'Bharat_AW_logfix_api25e3sm_mf1df100_r0303' # MF=1 Log
 #caseidprefix_gen <- 'Bharat_AW_NoLogging_api25e3sm_r0303b' # MF=1 NoLog
 caseidprefix_gen <- 'Bharat_AW_NoLogging_api25e3sm_r0301b' # MF=0 NoLog
+#caseidprefix_gen <- 'Bharat_AW_Nalloc_mf0df100_r0911_PIDE_AgBgW' # MF=0 NoLog
+
 
 caseidprefix_var <- c('C', 'CNP_ECA', 'CNP_RD' )
 caseidprefix_var <- c('', 'ECA', 'RD' ) #bs
@@ -59,6 +61,7 @@ caseidprefix[1] = caseidprefix_gen  # BS: since the Conly is same as the origina
 # Logging and mort_disturb_frac ? 
 MF = 0 # [0 1]
 Logging = "NoLog" # "Log" or "NoLog" 
+
 
 sites        <- c('US-DUK', 'US-ORN' )
 cases        <- c('aCO2', 'eCO2' )
@@ -218,7 +221,7 @@ lapply(rl1$data_arrays, dimnames )
 #   }
 #}
 
-
+source(paste0(wd_src,'/functions_FATESFACE_fatesoutv2.R'))
 
 lp <- calc_plot_vectors(l1, 'FATES_NPP', caseidprefix, sites, years )
 names(lp)
@@ -290,11 +293,12 @@ setwd(paste(root,moddate,sep='/'))
 if(!file.exists('figures')) dir.create('figures') 
 setwd('figures')
 # plot_vars <- c('FATES_NPP', 'NUP', 'FROOT_alloc_frac', 'LEAF_FROOT_ratio' )
-# plot_vars <- c('FATES_NPP')
+#plot_vars <- c('FATES_NPP')
 width     <- 6 
 height    <- 4 
 
 names(var_labs)
+
 
 # Plotting
 co2_exp = 'AMB' # 'AMB', 'ELE' choose either

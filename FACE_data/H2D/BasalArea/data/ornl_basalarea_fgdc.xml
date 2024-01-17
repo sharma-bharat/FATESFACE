@@ -1,0 +1,2173 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<metadata>
+  <idinfo>
+    <citation>
+      <citeinfo>
+        <origin><![CDATA[Norby, R.J.]]></origin>
+        <origin><![CDATA[Tharp, M.L.]]></origin>
+        <title><![CDATA[ORNL FACE Basal Area]]></title>
+        <geoform></geoform>
+        <onlink><![CDATA[http://cdiac.ess-dive.lbl.gov/xml/cdp/metadata/Lisa_Olsen/FACE/ornl_basalarea.xml]]></onlink>
+        <onlink><![CDATA[http://cdiac.ess-dive.lbl.gov/ftp/FACE/ornldata/basal_area/ba1997.dat]]></onlink>
+        <onlink><![CDATA[http://cdiac.ess-dive.lbl.gov/ftp/FACE/ornldata/basal_area/ba1998.dat]]></onlink>
+        <onlink><![CDATA[http://cdiac.ess-dive.lbl.gov/ftp/FACE/ornldata/basal_area/ba1999.dat]]></onlink>
+        <onlink><![CDATA[http://cdiac.ess-dive.lbl.gov/ftp/FACE/ornldata/basal_area/ba2000.dat]]></onlink>
+        <onlink><![CDATA[http://cdiac.ess-dive.lbl.gov/ftp/FACE/ornldata/basal_area/ba2001.dat]]></onlink>
+        <onlink><![CDATA[http://cdiac.ess-dive.lbl.gov/ftp/FACE/ornldata/basal_area/ba2002.dat]]></onlink>
+        <onlink><![CDATA[http://cdiac.ess-dive.lbl.gov/ftp/FACE/ornldata/basal_area/ba2003.dat]]></onlink>
+        <onlink><![CDATA[http://cdiac.ess-dive.lbl.gov/ftp/FACE/ornldata/basal_area/ba2004.dat]]></onlink>
+        <onlink><![CDATA[http://cdiac.ess-dive.lbl.gov/ftp/FACE/ornldata/basal_area/ba2005.dat]]></onlink>
+        <onlink><![CDATA[http://cdiac.ess-dive.lbl.gov/ftp/FACE/ornldata/basal_area/ba2006.dat]]></onlink>
+      </citeinfo>
+    </citation>
+    <descript>
+      <abstract><![CDATA[ORNL FACE Basal Area]]></abstract>
+      <supplinf></supplinf>
+    </descript>
+    <timeperd>
+      <timeinfo>
+        <rngdates>
+          <begdate><![CDATA[19970311]]></begdate>
+          <enddate><![CDATA[20061127]]></enddate>
+        </rngdates>
+      </timeinfo>
+    </timeperd>
+    <status>
+      <progress></progress>
+      <update> As appropriate</update>
+    </status>
+    <spdom>
+      <bounding>
+        <westbc><![CDATA[-84.33]]></westbc>
+        <eastbc><![CDATA[-84.33]]></eastbc>
+        <northbc><![CDATA[35.9]]></northbc>
+        <southbc><![CDATA[35.9]]></southbc>
+      </bounding>
+    </spdom>
+    <keywords>
+      <theme>
+        <themekt>CDIAC</themekt>
+        <themekey><![CDATA[carbon dioxide]]></themekey>
+        <themekey><![CDATA[CO2 enrichment]]></themekey>
+        <themekey><![CDATA[FACE]]></themekey>
+        <themekey><![CDATA[LAI]]></themekey>
+        <themekey><![CDATA[Leaf Area Index]]></themekey>
+        <themekey><![CDATA[ORNL FACE]]></themekey>
+        <themekey><![CDATA[sweetgum]]></themekey>
+        <themekey><![CDATA[Liquidambar Styraciflua]]></themekey>
+        <themekey><![CDATA[vegetation response]]></themekey>
+      </theme>
+      <theme>
+        <themekt>Thematic Area</themekt>
+      </theme>
+      <place>
+        <placekt>Place Keywords</placekt>
+        <placekey><![CDATA[http://public.ornl.gov/face/ORNL/ornl_data_plantresponse.shtml]]></placekey>
+      </place>
+    </keywords>
+    <ptcontac>
+      <cntinfo>
+        <cntperp>
+          <cntper><![CDATA[Lisa Olsen; email: olsenlm@ornl.gov]]></cntper>
+        </cntperp>
+        <cntfax></cntfax>
+      </cntinfo>
+    </ptcontac>
+  </idinfo>
+  <distinfo>
+    <distrib>
+      <cntinfo>
+        <cntperp>
+          <cntorg></cntorg>
+          <cntper><![CDATA[Lisa Olsen; email: olsenlm@ornl.gov]]></cntper>
+        </cntperp>
+        <cntvoice></cntvoice>
+        <cntfax></cntfax>
+        <cntemail></cntemail>
+      </cntinfo>
+    </distrib>
+    <resdesc></resdesc>
+    <stdorder>
+      <digform>
+        <digtopt>
+          <onlinopt>
+            <computer><![CDATA[http://cdiac.ess-dive.lbl.gov/]]></computer>
+            <accinstr></accinstr>
+          </onlinopt>
+        </digtopt>
+      </digform>
+    </stdorder>
+  </distinfo>
+  <metainfo>
+    <metd>20070731 125622</metd>
+    <metc>
+      <cntinfo>
+        <cntorgp>
+          <cntper><![CDATA[Lisa Olsen; email: olsenlm@ornl.gov]]></cntper>
+        </cntorgp>
+        <cntperp>
+          <cntper></cntper>
+        </cntperp>
+        <cntvoice></cntvoice>
+        <cntemail></cntemail>
+      </cntinfo>
+    </metc>
+    <metstdn>FGDC Content Standard for Digital Geospatial Metadata</metstdn>
+  </metainfo>
+  <Local-Control-Number>Created 20070731 124705 by 160.91.16.43</Local-Control-Number>
+  <mercury>
+    <begdate></begdate>
+    <enddate></enddate>
+    <Keywords><![CDATA[carbon dioxide]]></Keywords>
+    <Keywords><![CDATA[CO2 enrichment]]></Keywords>
+    <Keywords><![CDATA[FACE]]></Keywords>
+    <Keywords><![CDATA[LAI]]></Keywords>
+    <Keywords><![CDATA[Leaf Area Index]]></Keywords>
+    <Keywords><![CDATA[ORNL FACE]]></Keywords>
+    <Keywords><![CDATA[sweetgum]]></Keywords>
+    <Keywords><![CDATA[Liquidambar Styraciflua]]></Keywords>
+    <Keywords><![CDATA[vegetation response]]></Keywords>
+    <Documentation_Link>
+      <Text><![CDATA[                  FREE AIR CO2 ENRICHMENT (FACE) DATA REPORT:
+                               BASAL AREA 
+-----------------------------------------------------------------
+
+QUALITY-ASSURANCE CHECKS AND DATA-PROCESSING ACTIVITIES PERFORMED 
+   BY THE FACE PROJECT AND CDIAC 
+
+------------------------------------------------------------------
+
+Graphs of basal area data were used to examine the basal area values 
+for all trees over time and to screen for erroneous data.
+
+Dead trees were tabulated and included in the annual datasets with
+basal area values equal to zero. 
+
+
+DESCRIPTION OF THE ASCII DATA FILES
+-----------------------------------
+
+Basal area data are available for 1997 through 2007.  The number of times
+trees were measured each year varies from six to nine, and the header 
+record in each annual file gives dates when the basal area values were 
+recorded.  The files include data for 5 plots (rings) on the FACE site.
+
+Nine trees have two shoots, and the basal area values were added to
+give a total basal area for the tree.  When a shoot dies, the data 
+show a decrease in basal area for that tree. The following table is 
+a summary by plot for the trees which have two shoots. 
+
+Ring  Tree Numbers
+--------------------
+ 1    17, 40, 62, 77
+ 3    17, 59, 90
+ 4    53
+ 5    49
+
+
+LIST OF FILES
+-------------
+
+ba1997.dat    1997 basal area data
+ba1998.dat    1998 basal area data
+ba1999.dat    1999 basal area data
+ba2000.dat    2000 basal area data
+ba2001.dat    2001 basal area data
+ba2002.dat    2002 basal area data
+ba2003.dat    2003 basal area data
+ba2004.dat    2004 basal area data
+ba2005.dat    2005 basal area data
+ba2006.dat    2006 basal area data
+ba2007.dat    2007 basal area data
+
+
+FORMAT OF THE ASCII DATA FILES
+----------------------------------------------
+
+Contents and format of file, ba1997.dat, which includes values for 7 dates
+
+Header record for ba1997.dat
+
+Variable   Variable  Variable  Starting  Ending  Units      Definition and
+           type      width     column    column             comments
+
+day1       Integer   2         11        12      d          Day of month
+month1     Character 3         13        15      m          Month
+year1      Integer   4         16        19      y          Year
+day2       Integer   2         21        22      d          Day of month
+month2     Character 3         23        25      m          Month
+year2      Integer   4         26        29      y          Year
+day3       Integer   2         31        32      d          Day of month
+month3     Character 3         33        35      m          Month
+year3      Integer   4         36        39      y          Year
+day4       Integer   2         41        42      d          Day of month
+month4     Character 3         43        45      m          Month
+year4      Integer   4         46        49      y          Year
+day5       Integer   2         51        52      d          Day of month
+month5     Character 3         53        55      m          Month
+year5      Integer   4         56        59      y          Year
+day6       Integer   2         61        62      d          Day of month
+month6     Character 3         63        65      m          Month
+year6      Integer   4         66        69      y          Year
+day7       Integer   2         71        72      d          Day of month
+month7     Character 3         73        75      m          Month
+year7      Integer   4         76        79      y          Year
+
+Data records for ba1997.dat
+
+Variable   Variable  Variable  Starting  Ending  Units      Definition and
+           type      width     column    column             comments
+
+ring       Integer   1          1         1      -          Ring number 
+tree       Integer   4          6         9      -          Tree number 
+ba1        Integer   7         11        17      cm**2      Basal area 1 
+ba2        Integer   7         21        27      cm**2      Basal area 2 
+ba3        Integer   7         31        37      cm**2      Basal area 3 
+ba4        Integer   7         41        47      cm**2      Basal area 4 
+ba5        Integer   7         51        57      cm**2      Basal area 5 
+ba6        Integer   7         61        67      cm**2      Basal area 6 
+ba7        Integer   7         71        77      cm**2      Basal area 7 
+
+********
+
+Contents and format of file, ba1998.dat, which includes values for 6 dates.
+
+Header record for ba1998.dat
+
+Variable   Variable  Variable  Starting  Ending  Units      Definition and
+           type      width     column    column             comments
+
+day1       Integer   2         11        12      d          Day of month
+month1     Character 3         13        15      m          Month
+year1      Integer   4         16        19      y          Year
+day2       Integer   2         21        22      d          Day of month
+month2     Character 3         23        25      m          Month
+year2      Integer   4         26        29      y          Year
+day3       Integer   2         31        32      d          Day of month
+month3     Character 3         33        35      m          Month
+year3      Integer   4         36        39      y          Year
+day4       Integer   2         41        42      d          Day of month
+month4     Character 3         43        45      m          Month
+year4      Integer   4         46        49      y          Year
+day5       Integer   2         51        52      d          Day of month
+month5     Character 3         53        55      m          Month
+year5      Integer   4         56        59      y          Year
+day6       Integer   2         61        62      d          Day of month
+month6     Character 3         63        65      m          Month
+year6      Integer   4         66        69      y          Year
+
+Data records for ba1998.dat
+
+Variable   Variable  Variable  Starting  Ending  Units      Definition and
+           type      width     column    column             comments
+
+ring       Integer   1          1         1      -          Ring number 
+tree       Integer   4          6         9      -          Tree number 
+ba1        Integer   7         11        17      cm**2      Basal area 1 
+ba2        Integer   7         21        27      cm**2      Basal area 2 
+ba3        Integer   7         31        37      cm**2      Basal area 3 
+ba4        Integer   7         41        47      cm**2      Basal area 4 
+ba5        Integer   7         51        57      cm**2      Basal area 5 
+ba6        Integer   7         61        67      cm**2      Basal area 6 
+
+********
+
+Contents and format of file, ba1999.dat, which includes values for 8 dates.
+
+Header record for ba1999.dat
+
+Variable   Variable  Variable  Starting  Ending  Units      Definition and
+           type      width     column    column             comments
+
+day1       Integer   2         11        12      d          Day of month
+month1     Character 3         13        15      m          Month
+year1      Integer   4         16        19      y          Year
+day2       Integer   2         21        22      d          Day of month
+month2     Character 3         23        25      m          Month
+year2      Integer   4         26        29      y          Year
+day3       Integer   2         31        32      d          Day of month
+month3     Character 3         33        35      m          Month
+year3      Integer   4         36        39      y          Year
+day4       Integer   2         41        42      d          Day of month
+month4     Character 3         43        45      m          Month
+year4      Integer   4         46        49      y          Year
+day5       Integer   2         51        52      d          Day of month
+month5     Character 3         53        55      m          Month
+year5      Integer   4         56        59      y          Year
+day6       Integer   2         61        62      d          Day of month
+month6     Character 3         63        65      m          Month
+year6      Integer   4         66        69      y          Year
+day7       Integer   2         71        72      d          Day of month
+month7     Character 3         73        75      m          Month
+year7      Integer   4         76        79      y          Year
+day8       Integer   2         81        82      d          Day of month
+month8     Character 3         83        85      m          Month
+year8      Integer   4         86        89      y          Year
+
+Data records for ba1999.dat
+
+Variable   Variable  Variable  Starting  Ending  Units      Definition and
+           type      width     column    column             comments
+
+ring       Integer   1          1         1      -          Ring number 
+tree       Integer   4          6         9      -          Tree number 
+ba1        Integer   7         11        17      cm**2      Basal area 1 
+ba2        Integer   7         21        27      cm**2      Basal area 2 
+ba3        Integer   7         31        37      cm**2      Basal area 3 
+ba4        Integer   7         41        47      cm**2      Basal area 4 
+ba5        Integer   7         51        57      cm**2      Basal area 5 
+ba6        Integer   7         61        67      cm**2      Basal area 6 
+ba7        Integer   7         71        77      cm**2      Basal area 7 
+ba8        Integer   7         81        87      cm**2      Basal area 8 
+
+********
+
+Contents and format of file, ba2000.dat, which includes values for 9 dates.
+
+Header record for ba2000.dat
+
+Variable   Variable  Variable  Starting  Ending  Units      Definition and
+           type      width     column    column             comments
+
+day1       Integer   2         11        12      d          Day of month
+month1     Character 3         13        15      m          Month
+year1      Integer   4         16        19      y          Year
+day2       Integer   2         21        22      d          Day of month
+month2     Character 3         23        25      m          Month
+year2      Integer   4         26        29      y          Year
+day3       Integer   2         31        32      d          Day of month
+month3     Character 3         33        35      m          Month
+year3      Integer   4         36        39      y          Year
+day4       Integer   2         41        42      d          Day of month
+month4     Character 3         43        45      m          Month
+year4      Integer   4         46        49      y          Year
+day5       Integer   2         51        52      d          Day of month
+month5     Character 3         53        55      m          Month
+year5      Integer   4         56        59      y          Year
+day6       Integer   2         61        62      d          Day of month
+month6     Character 3         63        65      m          Month
+year6      Integer   4         66        69      y          Year
+day7       Integer   2         71        72      d          Day of month
+month7     Character 3         73        75      m          Month
+year7      Integer   4         76        79      y          Year
+day8       Integer   2         81        82      d          Day of month
+month8     Character 3         83        85      m          Month
+year8      Integer   4         86        89      y          Year
+day9       Integer   2         91        92      d          Day of month
+month9     Character 3         93        95      m          Month
+year9      Integer   4         96        99      y          Year
+
+Data records for ba2000.dat
+
+Variable   Variable  Variable  Starting  Ending  Units      Definition and
+           type      width     column    column             comments
+
+ring       Integer   1          1         1      -          Ring number 
+tree       Integer   4          6         9      -          Tree number 
+ba1        Integer   7         11        17      cm**2      Basal area 1 
+ba2        Integer   7         21        27      cm**2      Basal area 2 
+ba3        Integer   7         31        37      cm**2      Basal area 3 
+ba4        Integer   7         41        47      cm**2      Basal area 4 
+ba5        Integer   7         51        57      cm**2      Basal area 5 
+ba6        Integer   7         61        67      cm**2      Basal area 6 
+ba7        Integer   7         71        77      cm**2      Basal area 7 
+ba8        Integer   7         81        87      cm**2      Basal area 8 
+ba9        Integer   7         91        97      cm**2      Basal area 9 
+
+********
+
+Contents and format of file, ba2001.dat, which includes values for 7 dates.
+
+Header record for ba2001.dat
+
+Variable   Variable  Variable  Starting  Ending  Units      Definition and
+           type      width     column    column             comments
+
+day1       Integer   2         11        12      d          Day of month
+month1     Character 3         13        15      m          Month
+year1      Integer   4         16        19      y          Year
+day2       Integer   2         21        22      d          Day of month
+month2     Character 3         23        25      m          Month
+year2      Integer   4         26        29      y          Year
+day3       Integer   2         31        32      d          Day of month
+month3     Character 3         33        35      m          Month
+year3      Integer   4         36        39      y          Year
+day4       Integer   2         41        42      d          Day of month
+month4     Character 3         43        45      m          Month
+year4      Integer   4         46        49      y          Year
+day5       Integer   2         51        52      d          Day of month
+month5     Character 3         53        55      m          Month
+year5      Integer   4         56        59      y          Year
+day6       Integer   2         61        62      d          Day of month
+month6     Character 3         63        65      m          Month
+year6      Integer   4         66        69      y          Year
+day7       Integer   2         71        72      d          Day of month
+month7     Character 3         73        75      m          Month
+year7      Integer   4         76        79      y          Year
+
+Data records for ba2001.dat
+
+Variable   Variable  Variable  Starting  Ending  Units      Definition and
+           type      width     column    column             comments
+
+ring       Integer   1          1         1      -          Ring number 
+tree       Integer   4          6         9      -          Tree number 
+ba1        Integer   7         11        17      cm**2      Basal area 1 
+ba2        Integer   7         21        27      cm**2      Basal area 2 
+ba3        Integer   7         31        37      cm**2      Basal area 3 
+ba4        Integer   7         41        47      cm**2      Basal area 4 
+ba5        Integer   7         51        57      cm**2      Basal area 5 
+ba6        Integer   7         61        67      cm**2      Basal area 6 
+ba7        Integer   7         71        77      cm**2      Basal area 7 
+
+********
+
+Contents and format of file, ba2002.dat, which includes values for 9 dates.
+
+Header record for ba2002.dat
+
+Variable   Variable  Variable  Starting  Ending  Units      Definition and
+           type      width     column    column             comments
+
+day1       Integer   2         11        12      d          Day of month
+month1     Character 3         13        15      m          Month
+year1      Integer   4         16        19      y          Year
+day2       Integer   2         21        22      d          Day of month
+month2     Character 3         23        25      m          Month
+year2      Integer   4         26        29      y          Year
+day3       Integer   2         31        32      d          Day of month
+month3     Character 3         33        35      m          Month
+year3      Integer   4         36        39      y          Year
+day4       Integer   2         41        42      d          Day of month
+month4     Character 3         43        45      m          Month
+year4      Integer   4         46        49      y          Year
+day5       Integer   2         51        52      d          Day of month
+month5     Character 3         53        55      m          Month
+year5      Integer   4         56        59      y          Year
+day6       Integer   2         61        62      d          Day of month
+month6     Character 3         63        65      m          Month
+year6      Integer   4         66        69      y          Year
+day7       Integer   2         71        72      d          Day of month
+month7     Character 3         73        75      m          Month
+year7      Integer   4         76        79      y          Year
+day8       Integer   2         81        82      d          Day of month
+month8     Character 3         83        85      m          Month
+year8      Integer   4         86        89      y          Year
+day9       Integer   2         91        92      d          Day of month
+month9     Character 3         93        95      m          Month
+year9      Integer   4         96        99      y          Year
+
+Data records for ba2002.dat
+
+Variable   Variable  Variable  Starting  Ending  Units      Definition and
+           type      width     column    column             comments
+
+ring       Integer   1          1         1      -          Ring number 
+tree       Integer   4          6         9      -          Tree number 
+ba1        Integer   7         11        17      cm**2      Basal area 1 
+ba2        Integer   7         21        27      cm**2      Basal area 2 
+ba3        Integer   7         31        37      cm**2      Basal area 3 
+ba4        Integer   7         41        47      cm**2      Basal area 4 
+ba5        Integer   7         51        57      cm**2      Basal area 5 
+ba6        Integer   7         61        67      cm**2      Basal area 6 
+ba7        Integer   7         71        77      cm**2      Basal area 7 
+ba8        Integer   7         81        87      cm**2      Basal area 8 
+ba9        Integer   7         91        97      cm**2      Basal area 9 
+
+********
+
+Contents and format of file, ba2003.dat, which includes values for 7 dates.
+
+Header record for ba2003.dat
+
+Variable   Variable  Variable  Starting  Ending  Units      Definition and
+           type      width     column    column             comments
+
+day1       Integer   2         11        12      d          Day of month
+month1     Character 3         13        15      m          Month
+year1      Integer   4         16        19      y          Year
+day2       Integer   2         21        22      d          Day of month
+month2     Character 3         23        25      m          Month
+year2      Integer   4         26        29      y          Year
+day3       Integer   2         31        32      d          Day of month
+month3     Character 3         33        35      m          Month
+year3      Integer   4         36        39      y          Year
+day4       Integer   2         41        42      d          Day of month
+month4     Character 3         43        45      m          Month
+year4      Integer   4         46        49      y          Year
+day5       Integer   2         51        52      d          Day of month
+month5     Character 3         53        55      m          Month
+year5      Integer   4         56        59      y          Year
+day6       Integer   2         61        62      d          Day of month
+month6     Character 3         63        65      m          Month
+year6      Integer   4         66        69      y          Year
+day7       Integer   2         71        72      d          Day of month
+month7     Character 3         73        75      m          Month
+year7      Integer   4         76        79      y          Year
+
+Data records for ba2003.dat
+
+Variable   Variable  Variable  Starting  Ending  Units      Definition and
+           type      width     column    column             comments
+
+ring       Integer   1          1         1      -          Ring number 
+tree       Integer   4          6         9      -          Tree number 
+ba1        Integer   7         11        17      cm**2      Basal area 1 
+ba2        Integer   7         21        27      cm**2      Basal area 2 
+ba3        Integer   7         31        37      cm**2      Basal area 3 
+ba4        Integer   7         41        47      cm**2      Basal area 4 
+ba5        Integer   7         51        57      cm**2      Basal area 5 
+ba6        Integer   7         61        67      cm**2      Basal area 6 
+ba7        Integer   7         71        77      cm**2      Basal area 7 
+
+********
+
+Contents and format of file, ba2004.dat, which includes values for 6 dates.
+
+Header record for ba2004.dat
+
+Variable   Variable  Variable  Starting  Ending  Units      Definition and
+           type      width     column    column             comments
+
+day1       Integer   2         11        12      d          Day of month
+month1     Character 3         13        15      m          Month
+year1      Integer   4         16        19      y          Year
+day2       Integer   2         21        22      d          Day of month
+month2     Character 3         23        25      m          Month
+year2      Integer   4         26        29      y          Year
+day3       Integer   2         31        32      d          Day of month
+month3     Character 3         33        35      m          Month
+year3      Integer   4         36        39      y          Year
+day4       Integer   2         41        42      d          Day of month
+month4     Character 3         43        45      m          Month
+year4      Integer   4         46        49      y          Year
+day5       Integer   2         51        52      d          Day of month
+month5     Character 3         53        55      m          Month
+year5      Integer   4         56        59      y          Year
+day6       Integer   2         61        62      d          Day of month
+month6     Character 3         63        65      m          Month
+year6      Integer   4         66        69      y          Year
+
+Data records for ba2004.dat
+
+Variable   Variable  Variable  Starting  Ending  Units      Definition and
+           type      width     column    column             comments
+
+ring       Integer   1          1         1      -          Ring number 
+tree       Integer   4          6         9      -          Tree number 
+ba1        Integer   7         11        17      cm**2      Basal area 1 
+ba2        Integer   7         21        27      cm**2      Basal area 2 
+ba3        Integer   7         31        37      cm**2      Basal area 3 
+ba4        Integer   7         41        47      cm**2      Basal area 4 
+ba5        Integer   7         51        57      cm**2      Basal area 5 
+ba6        Integer   7         61        67      cm**2      Basal area 6 
+
+********
+
+Contents and format of file, ba2005.dat, which includes values for 6 dates.
+
+Header record for ba2005.dat
+
+Variable   Variable  Variable  Starting  Ending  Units      Definition and
+           type      width     column    column             comments
+
+day1       Integer   2         11        12      d          Day of month
+month1     Character 3         13        15      m          Month
+year1      Integer   4         16        19      y          Year
+day2       Integer   2         21        22      d          Day of month
+month2     Character 3         23        25      m          Month
+year2      Integer   4         26        29      y          Year
+day3       Integer   2         31        32      d          Day of month
+month3     Character 3         33        35      m          Month
+year3      Integer   4         36        39      y          Year
+day4       Integer   2         41        42      d          Day of month
+month4     Character 3         43        45      m          Month
+year4      Integer   4         46        49      y          Year
+day5       Integer   2         51        52      d          Day of month
+month5     Character 3         53        55      m          Month
+year5      Integer   4         56        59      y          Year
+day6       Integer   2         61        62      d          Day of month
+month6     Character 3         63        65      m          Month
+year6      Integer   4         66        69      y          Year
+
+Data records for ba2005.dat
+
+Variable   Variable  Variable  Starting  Ending  Units      Definition and
+           type      width     column    column             comments
+
+ring       Integer   1          1         1      -          Ring number 
+tree       Integer   4          6         9      -          Tree number 
+ba1        Integer   7         11        17      cm**2      Basal area 1 
+ba2        Integer   7         21        27      cm**2      Basal area 2 
+ba3        Integer   7         31        37      cm**2      Basal area 3 
+ba4        Integer   7         41        47      cm**2      Basal area 4 
+ba5        Integer   7         51        57      cm**2      Basal area 5 
+ba6        Integer   7         61        67      cm**2      Basal area 6 
+
+********
+
+Contents and format of file, ba2006.dat, which includes values for 7 dates.
+
+Header record for ba2006.dat
+
+Variable   Variable  Variable  Starting  Ending  Units      Definition and
+           type      width     column    column             comments
+
+day1       Integer   2         11        12      d          Day of month
+month1     Character 3         13        15      m          Month
+year1      Integer   4         16        19      y          Year
+day2       Integer   2         21        22      d          Day of month
+month2     Character 3         23        25      m          Month
+year2      Integer   4         26        29      y          Year
+day3       Integer   2         31        32      d          Day of month
+month3     Character 3         33        35      m          Month
+year3      Integer   4         36        39      y          Year
+day4       Integer   2         41        42      d          Day of month
+month4     Character 3         43        45      m          Month
+year4      Integer   4         46        49      y          Year
+day5       Integer   2         51        52      d          Day of month
+month5     Character 3         53        55      m          Month
+year5      Integer   4         56        59      y          Year
+day6       Integer   2         61        62      d          Day of month
+month6     Character 3         63        65      m          Month
+year6      Integer   4         66        69      y          Year
+day7       Integer   2         71        72      d          Day of month
+month7     Character 3         73        75      m          Month
+year7      Integer   4         76        79      y          Year
+
+Data records for ba2006.dat
+
+Variable   Variable  Variable  Starting  Ending  Units      Definition and
+           type      width     column    column             comments
+
+ring       Integer   1          1         1      -          Ring number 
+tree       Integer   4          6         9      -          Tree number 
+ba1        Integer   7         11        17      cm**2      Basal area 1 
+ba2        Integer   7         21        27      cm**2      Basal area 2 
+ba3        Integer   7         31        37      cm**2      Basal area 3 
+ba4        Integer   7         41        47      cm**2      Basal area 4 
+ba5        Integer   7         51        57      cm**2      Basal area 5 
+ba6        Integer   7         61        67      cm**2      Basal area 6 
+ba7        Integer   7         71        77      cm**2      Basal area 7 
+
+********
+
+Contents and format of file, ba2007.dat, which includes values for 7 dates.
+
+Header record for ba2007.dat
+
+Variable   Variable  Variable  Starting  Ending  Units      Definition and
+           type      width     column    column             comments
+
+day1       Integer   2         11        12      d          Day of month
+month1     Character 3         13        15      m          Month
+year1      Integer   4         16        19      y          Year
+day2       Integer   2         21        22      d          Day of month
+month2     Character 3         23        25      m          Month
+year2      Integer   4         26        29      y          Year
+day3       Integer   2         31        32      d          Day of month
+month3     Character 3         33        35      m          Month
+year3      Integer   4         36        39      y          Year
+day4       Integer   2         41        42      d          Day of month
+month4     Character 3         43        45      m          Month
+year4      Integer   4         46        49      y          Year
+day5       Integer   2         51        52      d          Day of month
+month5     Character 3         53        55      m          Month
+year5      Integer   4         56        59      y          Year
+day6       Integer   2         61        62      d          Day of month
+month6     Character 3         63        65      m          Month
+year6      Integer   4         66        69      y          Year
+day7       Integer   2         71        72      d          Day of month
+month7     Character 3         73        75      m          Month
+year7      Integer   4         76        79      y          Year
+
+Data records for ba2007.dat
+
+Variable   Variable  Variable  Starting  Ending  Units      Definition and
+           type      width     column    column             comments
+
+ring       Integer   1          1         1      -          Ring number 
+tree       Integer   4          6         9      -          Tree number 
+ba1        Integer   7         11        17      cm**2      Basal area 1 
+ba2        Integer   7         21        27      cm**2      Basal area 2 
+ba3        Integer   7         31        37      cm**2      Basal area 3 
+ba4        Integer   7         41        47      cm**2      Basal area 4 
+ba5        Integer   7         51        57      cm**2      Basal area 5 
+ba6        Integer   7         61        67      cm**2      Basal area 6 
+ba7        Integer   7         71        77      cm**2      Basal area 7 
+
+********
+
+
+SAMPLE LISTINGS OF THE ASCII DATA FILES
+----------------------------------------
+ 
+ba1997.dat
+
+First listed basal area records
+
+1       2      52        52        52        52        52        52        52
+1       3     157       157       161       168       174       175       175
+
+**********
+
+Last listed basal area records
+
+5     100     114       114       116       120       124       125       125
+5     101     156       156       158       161       166       166       167
+
+**********
+
+ba1998.dat
+
+First listed basal area records
+
+1       2      52        52        52        52        52        52
+1       3     176       177       183       195       198       199
+
+**********
+
+Last listed basal area records
+
+5     100     125       126       129       132       133       133
+5     101     167       168       170       174       175       175
+
+**********
+
+ba1999.dat
+
+First listed basal area records
+
+1       2      52        52        52        52        52        52        52        52
+1       3     201       201       204       210       215       219       219       219
+
+**********
+
+Last listed basal area records
+
+5     100     133       134       136       139       140       141       141       141
+5     101     176       176       178       181       184       184       185       185
+
+**********
+
+ba2000.dat
+
+First listed basal area records
+
+1       2       0         0         0         0         0         0         0         0         0
+1       3     219       220       220       224       231       235       238       239       240
+
+**********
+
+Last listed basal area records
+
+5     100     141       141       142       144       147       148       149       149       150
+5     101     185       185       185       187       191       192       193       193       194
+
+**********
+
+ba2001.dat
+
+First listed basal area records
+
+1       2       0         0         0         0         0         0         0
+1       3     240       240       245       249       256       259       259
+
+**********
+
+Last listed basal area records
+
+5     100     150       150       153       154       157       157       157
+5     101     194       195       197       198       201       201       200
+
+**********
+
+ba2002.dat
+
+First listed basal area records
+
+1       2       0         0         0         0         0         0         0         0         0
+1       3     259       259       261       266       270       275       276       276       277
+
+**********
+
+Last listed basal area records
+
+5     100     157       156       158       160       161       163       163       163       163
+5     101     200       200       201       203       205       206       207       207       207
+
+**********
+
+ba2003.dat
+
+First listed basal area records
+
+1       2       0         0         0         0         0         0         0
+1       3     277       279       285       293       299       301       301
+
+**********
+
+Last listed basal area records
+
+5     100     163       165       168       170       171       171       170
+5     101     207       209       211       213       214       213       214
+
+**********
+
+ba2004.dat
+
+First listed basal area records
+
+1       2       0         0         0         0         0         0
+1       3     301       302       310       315       319       319
+
+**********
+
+Last listed basal area records
+
+5     100     170       172       175       175       176       176
+5     101     214       215       217       219       219       227
+
+**********
+
+ba2005.dat
+
+First listed basal area records
+
+1       2       0         0         0         0         0         0
+1       3     319       319       323       332       335       336
+
+**********
+
+Last listed basal area records
+
+5     100     176       176       178       181       181       181
+5     101     227       226       227       229       229       230
+
+**********
+
+ba2006.dat
+
+First listed basal area records
+
+1       2       0         0         0         0         0         0         0
+1       3     336       335       339       342       346       347       348
+
+**********
+
+Last listed basal area records
+
+5     100     181       180       182       183       186       186       186
+5     101     230       230       230       231       234       234       234
+
+**********
+
+ba2007.dat
+
+First listed basal area records
+
+1       2       0         0         0         0         0         0         0
+1       3     348       348       354       356       357       358       358
+
+**********
+
+Last listed basal area records
+
+5     100     186       186       190       190       191       191       191
+5     101     234       233       235       236       236       236       236
+
+**********
+
+
+SPREADSHEET SOFTWARE TO ACCESS THE DATA
+--------------------------------------------
+
+Since these basal area files are space-delimited ASCII text, 
+the files can be imported to spreadsheet software such as Excel.   
+
+
+SAS and FORTRAN CODES TO ACCESS THE DATA
+--------------------------------------------
+
+/* SAS code to read basal area data */
+
+/* DATES97 - DATES07 -  These macro variables define the number of times */
+/*                      basal area is recorded from 1997 - 2007 */
+
+%let DATES97 = 7;
+%let DATES98 = 6;
+%let DATES99 = 8;
+%let DATES00 = 9;
+%let DATES01 = 7;
+%let DATES02 = 9;
+%let DATES03 = 7;
+%let DATES04 = 6;
+%let DATES05 = 6;
+%let DATES06 = 7;
+%let DATES07 = 7;
+
+%macro basal_area;
+
+/*   Input Variables:                                            */
+/*         m_date - Date of measurement represented as ddmmmyyyy */
+/*         ring   - ring number (1-5)                            */
+/*         tree   - tree number                                  */
+/*         ba     - basal area(cm2)                              */
+
+data basal;
+
+   infile "ba&amp;YEAR..dat";
+
+   array m_date [9] m_date1-m_date9;
+   array ba [9] ba1 - ba9;
+   retain m_date1 - m_date&amp;DATES;
+   keep ring tree m_date1 - m_date&amp;DATES ba1 - ba&amp;DATES;
+
+   if _N_ = 1 then do;
+
+      /* Read header records */
+      input ///////;
+
+      /* Read dates when basal area was recorded */
+
+      ncol = 11;
+      do i = 1 to &amp;DATES;
+         input @ncol m_date[i] date9. @ ;
+         ncol = ncol + 10;
+      end; 
+      input;
+   end;
+
+   /* Read ring number, tree number, and basal area values */
+
+   input ring tree @; 
+   do i = 1 to &amp;DATES;
+      input ba[i] @; 
+   end;
+   input;   /* release pointer */
+
+proc print data = basal;
+   var ring tree m_date1-m_date&amp;DATES ba1-ba&amp;DATES;
+
+run;
+
+%mend basal_area;
+
+%let DATES = &amp;DATES97;
+%let YEAR = 1997;
+%basal_area
+
+%let DATES = &amp;DATES98;
+%let YEAR = 1998;
+%basal_area
+
+%let DATES = &amp;DATES99;
+%let YEAR = 1999;
+%basal_area
+
+%let DATES = &amp;DATES00;
+%let YEAR = 2000;
+%basal_area
+
+%let DATES = &amp;DATES01;
+%let YEAR = 2001;
+%basal_area
+
+%let DATES = &amp;DATES02;
+%let YEAR = 2002;
+%basal_area
+
+%let DATES = &amp;DATES03;
+%let YEAR = 2003;
+%basal_area
+
+%let DATES = &amp;DATES04;
+%let YEAR = 2004;
+%basal_area
+
+%let DATES = &amp;DATES05;
+%let YEAR = 2005;
+%basal_area
+  
+%let DATES = &amp;DATES06;
+%let YEAR = 2006;
+%basal_area
+  
+%let DATES = &amp;DATES07;
+%let YEAR = 2007;
+%basal_area
+
+**********
+
+
+FORTRAN code to read basal area datasets
+
+      program basal_area 
+      implicit none
+
+!     To read a file of basal area data (ba1997.dat-ba2007.dat), 
+!     modify the parameter variable ba_yr.
+
+!     The number of times each year when trees were measured
+!     and basal area values recorded varies from 6 - 9.
+!     The format of the dates is ddmmmyyyy. 
+
+!     Year   Number of dates
+!     ---------------------
+
+!     1997 - 7 
+!     1998 - 6
+!     1999 - 8
+!     2000 - 9
+!     2001 - 7
+!     2002 - 9
+!     2003 - 7
+!     2004 - 6
+!     2005 - 6
+!     2006 - 7
+!     2007 - 7
+
+!     Input variables for header record:
+!           day1-day9     - Day of the month for date1-date9
+!           month1-month9 - Month for date1-date9
+!           year1-year9   - Year for date1-date9
+
+!     Input variables for data record:
+!          ring    - ring number
+!          tree    - tree number
+!          ba1-ba9 - Basal area for date1-date9 
+
+      character(len=4), parameter :: ba_yr = "2006" 
+      integer, parameter :: max_dates = 9;
+
+      real    :: ba(max_dates)
+      integer :: day(max_dates), year(max_dates)
+      integer :: ring, tree, nrec, ioerror, num_dates, i
+
+      character(len=3) :: month(max_dates)
+      character(len=10) :: filename 
+
+      filename = "ba"//ba_yr//".dat"
+
+      if (ba_yr .eq. "1997") then
+         num_dates = 7;
+      else if (ba_yr .eq. "1998") then
+         num_dates = 6
+      else if (ba_yr .eq. "1999") then
+         num_dates = 8
+      else if (ba_yr .eq. "2000") then
+          num_dates = 9
+      else if (ba_yr .eq. "2001") then
+         num_dates = 7;
+      else if (ba_yr .eq. "2002") then
+         num_dates = 9;
+      else if (ba_yr .eq. "2003") then
+         num_dates = 7;
+      else if (ba_yr .eq. "2004") then
+         num_dates = 6;
+      else if (ba_yr .eq. "2005") then
+         num_dates = 6;
+      else if (ba_yr .eq. "2006") then
+         num_dates = 7;
+      else if (ba_yr .eq. "2007") then
+         num_dates = 7;
+      endif
+
+      open(unit = 10, file = filename,&amp;
+         &amp;status = 'old', iostat = ioerror)
+
+      if(ioerror   0) then
+         write(6,'("Error opening input file.")')
+         stop
+      endif
+
+!     input header records
+      read(10,'(///////)')
+
+!     input dates when tree was measured and basal area recorded
+      read(10,'(9x,9(1x,i2,a3,i4))')&amp;
+         &amp;(day(i), month(i), year(i), i = 1, num_dates)
+
+      if(ioerror /= 0) then
+         write(6,'("Input error reading header records.")')
+         stop
+      endif
+
+      nrec = 0   !initialize counter for summing input records
+   10 continue
+
+      read(10,'(i1,5x,i3,9(1x,f9.0))', iostat = ioerror)&amp;
+        &amp; ring, tree, (ba(i), i=1,num_dates) 
+      
+      if(ioerror   0) then
+         write(6,'("End-of-file")')
+         write(6,'("Number of data records read = ", i5)') nrec
+        stop
+      endif
+
+      write(6,'(i1,2x,i3,2x,9(f8.0,2x))')&amp;
+         &amp; ring , tree, (ba(i),i = 1,num_dates) 
+      nrec = nrec + 1
+      go to 10   !read next record
+
+      close (10)
+
+      stop
+      end
+
+**********
+]]></Text>
+    </Documentation_Link>
+    <OME_Software_Version>Version 4.7.5, Revision Date: 04 Apr 2006</OME_Software_Version>
+    <OME_DTD_Version>metadata10.dtd</OME_DTD_Version>
+    <Temporal_Resolution></Temporal_Resolution>
+    <enddate_blank></enddate_blank>
+    <Harvest_Date>2017-09-01</Harvest_Date>
+    <File_ID>Created 20070731 124705 by 160.91.16.43</File_ID>
+    <Spatial_Extent></Spatial_Extent>
+    <Metadata_URL><![CDATA[http://cdiac.ess-dive.lbl.gov/xml/cdp/metadata/Lisa_Olsen/FACE/ornl_basalarea.xml]]></Metadata_URL>
+    <CDIAC>
+      <Product_number><![CDATA[ORNL FACE BASAL AREA]]></Product_number>
+      <Product_title><![CDATA[ORNL FACE Basal Area]]></Product_title>
+      <Author>
+        <Name><![CDATA[Norby, R.J.]]></Name>
+        <Company><![CDATA[Environmental Sciences Division]]></Company>
+        <Organization><![CDATA[Oak Ridge National Laboratory]]></Organization>
+      </Author>
+      <Author>
+        <Name><![CDATA[Tharp, M.L.]]></Name>
+        <Company><![CDATA[Environmental Sciences Division]]></Company>
+        <Organization><![CDATA[Oak Ridge National Laboratory]]></Organization>
+      </Author>
+      <Thematic_area><![CDATA[Vegetation response to CO2 and Climate]]></Thematic_area>
+      <Site_info>
+        <Site_name><![CDATA[Oak Ridge National Laboratory FACE Experiment]]></Site_name>
+        <Site_URL><![CDATA[http://public.ornl.gov/face/ORNL/ornl_home.shtml]]></Site_URL>
+        <Site_data_file><![CDATA[http://public.ornl.gov/face/ORNL/ornl_data_plantresponse.shtml]]></Site_data_file>
+      </Site_info>
+      <Data_site><![CDATA[http://public.ornl.gov/face/ORNL/ornl_data_plantresponse.shtml]]></Data_site>
+      <Variable><![CDATA[RING]]></Variable>
+      <Variable><![CDATA[TREE]]></Variable>
+      <Variable><![CDATA[BASAL AREA (cm2) by DDMMYYYY]]></Variable>
+      <Descriptive_file><![CDATA[http://cdiac.ess-dive.lbl.gov/ftp/FACE/ornldata/basal_area/basal_area.txt                  FREE AIR CO2 ENRICHMENT (FACE) DATA REPORT:
+                               BASAL AREA 
+-----------------------------------------------------------------
+
+QUALITY-ASSURANCE CHECKS AND DATA-PROCESSING ACTIVITIES PERFORMED 
+   BY THE FACE PROJECT AND CDIAC 
+
+------------------------------------------------------------------
+
+Graphs of basal area data were used to examine the basal area values 
+for all trees over time and to screen for erroneous data.
+
+Dead trees were tabulated and included in the annual datasets with
+basal area values equal to zero. 
+
+
+DESCRIPTION OF THE ASCII DATA FILES
+-----------------------------------
+
+Basal area data are available for 1997 through 2007.  The number of times
+trees were measured each year varies from six to nine, and the header 
+record in each annual file gives dates when the basal area values were 
+recorded.  The files include data for 5 plots (rings) on the FACE site.
+
+Nine trees have two shoots, and the basal area values were added to
+give a total basal area for the tree.  When a shoot dies, the data 
+show a decrease in basal area for that tree. The following table is 
+a summary by plot for the trees which have two shoots. 
+
+Ring  Tree Numbers
+--------------------
+ 1    17, 40, 62, 77
+ 3    17, 59, 90
+ 4    53
+ 5    49
+
+
+LIST OF FILES
+-------------
+
+ba1997.dat    1997 basal area data
+ba1998.dat    1998 basal area data
+ba1999.dat    1999 basal area data
+ba2000.dat    2000 basal area data
+ba2001.dat    2001 basal area data
+ba2002.dat    2002 basal area data
+ba2003.dat    2003 basal area data
+ba2004.dat    2004 basal area data
+ba2005.dat    2005 basal area data
+ba2006.dat    2006 basal area data
+ba2007.dat    2007 basal area data
+
+
+FORMAT OF THE ASCII DATA FILES
+----------------------------------------------
+
+Contents and format of file, ba1997.dat, which includes values for 7 dates
+
+Header record for ba1997.dat
+
+Variable   Variable  Variable  Starting  Ending  Units      Definition and
+           type      width     column    column             comments
+
+day1       Integer   2         11        12      d          Day of month
+month1     Character 3         13        15      m          Month
+year1      Integer   4         16        19      y          Year
+day2       Integer   2         21        22      d          Day of month
+month2     Character 3         23        25      m          Month
+year2      Integer   4         26        29      y          Year
+day3       Integer   2         31        32      d          Day of month
+month3     Character 3         33        35      m          Month
+year3      Integer   4         36        39      y          Year
+day4       Integer   2         41        42      d          Day of month
+month4     Character 3         43        45      m          Month
+year4      Integer   4         46        49      y          Year
+day5       Integer   2         51        52      d          Day of month
+month5     Character 3         53        55      m          Month
+year5      Integer   4         56        59      y          Year
+day6       Integer   2         61        62      d          Day of month
+month6     Character 3         63        65      m          Month
+year6      Integer   4         66        69      y          Year
+day7       Integer   2         71        72      d          Day of month
+month7     Character 3         73        75      m          Month
+year7      Integer   4         76        79      y          Year
+
+Data records for ba1997.dat
+
+Variable   Variable  Variable  Starting  Ending  Units      Definition and
+           type      width     column    column             comments
+
+ring       Integer   1          1         1      -          Ring number 
+tree       Integer   4          6         9      -          Tree number 
+ba1        Integer   7         11        17      cm**2      Basal area 1 
+ba2        Integer   7         21        27      cm**2      Basal area 2 
+ba3        Integer   7         31        37      cm**2      Basal area 3 
+ba4        Integer   7         41        47      cm**2      Basal area 4 
+ba5        Integer   7         51        57      cm**2      Basal area 5 
+ba6        Integer   7         61        67      cm**2      Basal area 6 
+ba7        Integer   7         71        77      cm**2      Basal area 7 
+
+********
+
+Contents and format of file, ba1998.dat, which includes values for 6 dates.
+
+Header record for ba1998.dat
+
+Variable   Variable  Variable  Starting  Ending  Units      Definition and
+           type      width     column    column             comments
+
+day1       Integer   2         11        12      d          Day of month
+month1     Character 3         13        15      m          Month
+year1      Integer   4         16        19      y          Year
+day2       Integer   2         21        22      d          Day of month
+month2     Character 3         23        25      m          Month
+year2      Integer   4         26        29      y          Year
+day3       Integer   2         31        32      d          Day of month
+month3     Character 3         33        35      m          Month
+year3      Integer   4         36        39      y          Year
+day4       Integer   2         41        42      d          Day of month
+month4     Character 3         43        45      m          Month
+year4      Integer   4         46        49      y          Year
+day5       Integer   2         51        52      d          Day of month
+month5     Character 3         53        55      m          Month
+year5      Integer   4         56        59      y          Year
+day6       Integer   2         61        62      d          Day of month
+month6     Character 3         63        65      m          Month
+year6      Integer   4         66        69      y          Year
+
+Data records for ba1998.dat
+
+Variable   Variable  Variable  Starting  Ending  Units      Definition and
+           type      width     column    column             comments
+
+ring       Integer   1          1         1      -          Ring number 
+tree       Integer   4          6         9      -          Tree number 
+ba1        Integer   7         11        17      cm**2      Basal area 1 
+ba2        Integer   7         21        27      cm**2      Basal area 2 
+ba3        Integer   7         31        37      cm**2      Basal area 3 
+ba4        Integer   7         41        47      cm**2      Basal area 4 
+ba5        Integer   7         51        57      cm**2      Basal area 5 
+ba6        Integer   7         61        67      cm**2      Basal area 6 
+
+********
+
+Contents and format of file, ba1999.dat, which includes values for 8 dates.
+
+Header record for ba1999.dat
+
+Variable   Variable  Variable  Starting  Ending  Units      Definition and
+           type      width     column    column             comments
+
+day1       Integer   2         11        12      d          Day of month
+month1     Character 3         13        15      m          Month
+year1      Integer   4         16        19      y          Year
+day2       Integer   2         21        22      d          Day of month
+month2     Character 3         23        25      m          Month
+year2      Integer   4         26        29      y          Year
+day3       Integer   2         31        32      d          Day of month
+month3     Character 3         33        35      m          Month
+year3      Integer   4         36        39      y          Year
+day4       Integer   2         41        42      d          Day of month
+month4     Character 3         43        45      m          Month
+year4      Integer   4         46        49      y          Year
+day5       Integer   2         51        52      d          Day of month
+month5     Character 3         53        55      m          Month
+year5      Integer   4         56        59      y          Year
+day6       Integer   2         61        62      d          Day of month
+month6     Character 3         63        65      m          Month
+year6      Integer   4         66        69      y          Year
+day7       Integer   2         71        72      d          Day of month
+month7     Character 3         73        75      m          Month
+year7      Integer   4         76        79      y          Year
+day8       Integer   2         81        82      d          Day of month
+month8     Character 3         83        85      m          Month
+year8      Integer   4         86        89      y          Year
+
+Data records for ba1999.dat
+
+Variable   Variable  Variable  Starting  Ending  Units      Definition and
+           type      width     column    column             comments
+
+ring       Integer   1          1         1      -          Ring number 
+tree       Integer   4          6         9      -          Tree number 
+ba1        Integer   7         11        17      cm**2      Basal area 1 
+ba2        Integer   7         21        27      cm**2      Basal area 2 
+ba3        Integer   7         31        37      cm**2      Basal area 3 
+ba4        Integer   7         41        47      cm**2      Basal area 4 
+ba5        Integer   7         51        57      cm**2      Basal area 5 
+ba6        Integer   7         61        67      cm**2      Basal area 6 
+ba7        Integer   7         71        77      cm**2      Basal area 7 
+ba8        Integer   7         81        87      cm**2      Basal area 8 
+
+********
+
+Contents and format of file, ba2000.dat, which includes values for 9 dates.
+
+Header record for ba2000.dat
+
+Variable   Variable  Variable  Starting  Ending  Units      Definition and
+           type      width     column    column             comments
+
+day1       Integer   2         11        12      d          Day of month
+month1     Character 3         13        15      m          Month
+year1      Integer   4         16        19      y          Year
+day2       Integer   2         21        22      d          Day of month
+month2     Character 3         23        25      m          Month
+year2      Integer   4         26        29      y          Year
+day3       Integer   2         31        32      d          Day of month
+month3     Character 3         33        35      m          Month
+year3      Integer   4         36        39      y          Year
+day4       Integer   2         41        42      d          Day of month
+month4     Character 3         43        45      m          Month
+year4      Integer   4         46        49      y          Year
+day5       Integer   2         51        52      d          Day of month
+month5     Character 3         53        55      m          Month
+year5      Integer   4         56        59      y          Year
+day6       Integer   2         61        62      d          Day of month
+month6     Character 3         63        65      m          Month
+year6      Integer   4         66        69      y          Year
+day7       Integer   2         71        72      d          Day of month
+month7     Character 3         73        75      m          Month
+year7      Integer   4         76        79      y          Year
+day8       Integer   2         81        82      d          Day of month
+month8     Character 3         83        85      m          Month
+year8      Integer   4         86        89      y          Year
+day9       Integer   2         91        92      d          Day of month
+month9     Character 3         93        95      m          Month
+year9      Integer   4         96        99      y          Year
+
+Data records for ba2000.dat
+
+Variable   Variable  Variable  Starting  Ending  Units      Definition and
+           type      width     column    column             comments
+
+ring       Integer   1          1         1      -          Ring number 
+tree       Integer   4          6         9      -          Tree number 
+ba1        Integer   7         11        17      cm**2      Basal area 1 
+ba2        Integer   7         21        27      cm**2      Basal area 2 
+ba3        Integer   7         31        37      cm**2      Basal area 3 
+ba4        Integer   7         41        47      cm**2      Basal area 4 
+ba5        Integer   7         51        57      cm**2      Basal area 5 
+ba6        Integer   7         61        67      cm**2      Basal area 6 
+ba7        Integer   7         71        77      cm**2      Basal area 7 
+ba8        Integer   7         81        87      cm**2      Basal area 8 
+ba9        Integer   7         91        97      cm**2      Basal area 9 
+
+********
+
+Contents and format of file, ba2001.dat, which includes values for 7 dates.
+
+Header record for ba2001.dat
+
+Variable   Variable  Variable  Starting  Ending  Units      Definition and
+           type      width     column    column             comments
+
+day1       Integer   2         11        12      d          Day of month
+month1     Character 3         13        15      m          Month
+year1      Integer   4         16        19      y          Year
+day2       Integer   2         21        22      d          Day of month
+month2     Character 3         23        25      m          Month
+year2      Integer   4         26        29      y          Year
+day3       Integer   2         31        32      d          Day of month
+month3     Character 3         33        35      m          Month
+year3      Integer   4         36        39      y          Year
+day4       Integer   2         41        42      d          Day of month
+month4     Character 3         43        45      m          Month
+year4      Integer   4         46        49      y          Year
+day5       Integer   2         51        52      d          Day of month
+month5     Character 3         53        55      m          Month
+year5      Integer   4         56        59      y          Year
+day6       Integer   2         61        62      d          Day of month
+month6     Character 3         63        65      m          Month
+year6      Integer   4         66        69      y          Year
+day7       Integer   2         71        72      d          Day of month
+month7     Character 3         73        75      m          Month
+year7      Integer   4         76        79      y          Year
+
+Data records for ba2001.dat
+
+Variable   Variable  Variable  Starting  Ending  Units      Definition and
+           type      width     column    column             comments
+
+ring       Integer   1          1         1      -          Ring number 
+tree       Integer   4          6         9      -          Tree number 
+ba1        Integer   7         11        17      cm**2      Basal area 1 
+ba2        Integer   7         21        27      cm**2      Basal area 2 
+ba3        Integer   7         31        37      cm**2      Basal area 3 
+ba4        Integer   7         41        47      cm**2      Basal area 4 
+ba5        Integer   7         51        57      cm**2      Basal area 5 
+ba6        Integer   7         61        67      cm**2      Basal area 6 
+ba7        Integer   7         71        77      cm**2      Basal area 7 
+
+********
+
+Contents and format of file, ba2002.dat, which includes values for 9 dates.
+
+Header record for ba2002.dat
+
+Variable   Variable  Variable  Starting  Ending  Units      Definition and
+           type      width     column    column             comments
+
+day1       Integer   2         11        12      d          Day of month
+month1     Character 3         13        15      m          Month
+year1      Integer   4         16        19      y          Year
+day2       Integer   2         21        22      d          Day of month
+month2     Character 3         23        25      m          Month
+year2      Integer   4         26        29      y          Year
+day3       Integer   2         31        32      d          Day of month
+month3     Character 3         33        35      m          Month
+year3      Integer   4         36        39      y          Year
+day4       Integer   2         41        42      d          Day of month
+month4     Character 3         43        45      m          Month
+year4      Integer   4         46        49      y          Year
+day5       Integer   2         51        52      d          Day of month
+month5     Character 3         53        55      m          Month
+year5      Integer   4         56        59      y          Year
+day6       Integer   2         61        62      d          Day of month
+month6     Character 3         63        65      m          Month
+year6      Integer   4         66        69      y          Year
+day7       Integer   2         71        72      d          Day of month
+month7     Character 3         73        75      m          Month
+year7      Integer   4         76        79      y          Year
+day8       Integer   2         81        82      d          Day of month
+month8     Character 3         83        85      m          Month
+year8      Integer   4         86        89      y          Year
+day9       Integer   2         91        92      d          Day of month
+month9     Character 3         93        95      m          Month
+year9      Integer   4         96        99      y          Year
+
+Data records for ba2002.dat
+
+Variable   Variable  Variable  Starting  Ending  Units      Definition and
+           type      width     column    column             comments
+
+ring       Integer   1          1         1      -          Ring number 
+tree       Integer   4          6         9      -          Tree number 
+ba1        Integer   7         11        17      cm**2      Basal area 1 
+ba2        Integer   7         21        27      cm**2      Basal area 2 
+ba3        Integer   7         31        37      cm**2      Basal area 3 
+ba4        Integer   7         41        47      cm**2      Basal area 4 
+ba5        Integer   7         51        57      cm**2      Basal area 5 
+ba6        Integer   7         61        67      cm**2      Basal area 6 
+ba7        Integer   7         71        77      cm**2      Basal area 7 
+ba8        Integer   7         81        87      cm**2      Basal area 8 
+ba9        Integer   7         91        97      cm**2      Basal area 9 
+
+********
+
+Contents and format of file, ba2003.dat, which includes values for 7 dates.
+
+Header record for ba2003.dat
+
+Variable   Variable  Variable  Starting  Ending  Units      Definition and
+           type      width     column    column             comments
+
+day1       Integer   2         11        12      d          Day of month
+month1     Character 3         13        15      m          Month
+year1      Integer   4         16        19      y          Year
+day2       Integer   2         21        22      d          Day of month
+month2     Character 3         23        25      m          Month
+year2      Integer   4         26        29      y          Year
+day3       Integer   2         31        32      d          Day of month
+month3     Character 3         33        35      m          Month
+year3      Integer   4         36        39      y          Year
+day4       Integer   2         41        42      d          Day of month
+month4     Character 3         43        45      m          Month
+year4      Integer   4         46        49      y          Year
+day5       Integer   2         51        52      d          Day of month
+month5     Character 3         53        55      m          Month
+year5      Integer   4         56        59      y          Year
+day6       Integer   2         61        62      d          Day of month
+month6     Character 3         63        65      m          Month
+year6      Integer   4         66        69      y          Year
+day7       Integer   2         71        72      d          Day of month
+month7     Character 3         73        75      m          Month
+year7      Integer   4         76        79      y          Year
+
+Data records for ba2003.dat
+
+Variable   Variable  Variable  Starting  Ending  Units      Definition and
+           type      width     column    column             comments
+
+ring       Integer   1          1         1      -          Ring number 
+tree       Integer   4          6         9      -          Tree number 
+ba1        Integer   7         11        17      cm**2      Basal area 1 
+ba2        Integer   7         21        27      cm**2      Basal area 2 
+ba3        Integer   7         31        37      cm**2      Basal area 3 
+ba4        Integer   7         41        47      cm**2      Basal area 4 
+ba5        Integer   7         51        57      cm**2      Basal area 5 
+ba6        Integer   7         61        67      cm**2      Basal area 6 
+ba7        Integer   7         71        77      cm**2      Basal area 7 
+
+********
+
+Contents and format of file, ba2004.dat, which includes values for 6 dates.
+
+Header record for ba2004.dat
+
+Variable   Variable  Variable  Starting  Ending  Units      Definition and
+           type      width     column    column             comments
+
+day1       Integer   2         11        12      d          Day of month
+month1     Character 3         13        15      m          Month
+year1      Integer   4         16        19      y          Year
+day2       Integer   2         21        22      d          Day of month
+month2     Character 3         23        25      m          Month
+year2      Integer   4         26        29      y          Year
+day3       Integer   2         31        32      d          Day of month
+month3     Character 3         33        35      m          Month
+year3      Integer   4         36        39      y          Year
+day4       Integer   2         41        42      d          Day of month
+month4     Character 3         43        45      m          Month
+year4      Integer   4         46        49      y          Year
+day5       Integer   2         51        52      d          Day of month
+month5     Character 3         53        55      m          Month
+year5      Integer   4         56        59      y          Year
+day6       Integer   2         61        62      d          Day of month
+month6     Character 3         63        65      m          Month
+year6      Integer   4         66        69      y          Year
+
+Data records for ba2004.dat
+
+Variable   Variable  Variable  Starting  Ending  Units      Definition and
+           type      width     column    column             comments
+
+ring       Integer   1          1         1      -          Ring number 
+tree       Integer   4          6         9      -          Tree number 
+ba1        Integer   7         11        17      cm**2      Basal area 1 
+ba2        Integer   7         21        27      cm**2      Basal area 2 
+ba3        Integer   7         31        37      cm**2      Basal area 3 
+ba4        Integer   7         41        47      cm**2      Basal area 4 
+ba5        Integer   7         51        57      cm**2      Basal area 5 
+ba6        Integer   7         61        67      cm**2      Basal area 6 
+
+********
+
+Contents and format of file, ba2005.dat, which includes values for 6 dates.
+
+Header record for ba2005.dat
+
+Variable   Variable  Variable  Starting  Ending  Units      Definition and
+           type      width     column    column             comments
+
+day1       Integer   2         11        12      d          Day of month
+month1     Character 3         13        15      m          Month
+year1      Integer   4         16        19      y          Year
+day2       Integer   2         21        22      d          Day of month
+month2     Character 3         23        25      m          Month
+year2      Integer   4         26        29      y          Year
+day3       Integer   2         31        32      d          Day of month
+month3     Character 3         33        35      m          Month
+year3      Integer   4         36        39      y          Year
+day4       Integer   2         41        42      d          Day of month
+month4     Character 3         43        45      m          Month
+year4      Integer   4         46        49      y          Year
+day5       Integer   2         51        52      d          Day of month
+month5     Character 3         53        55      m          Month
+year5      Integer   4         56        59      y          Year
+day6       Integer   2         61        62      d          Day of month
+month6     Character 3         63        65      m          Month
+year6      Integer   4         66        69      y          Year
+
+Data records for ba2005.dat
+
+Variable   Variable  Variable  Starting  Ending  Units      Definition and
+           type      width     column    column             comments
+
+ring       Integer   1          1         1      -          Ring number 
+tree       Integer   4          6         9      -          Tree number 
+ba1        Integer   7         11        17      cm**2      Basal area 1 
+ba2        Integer   7         21        27      cm**2      Basal area 2 
+ba3        Integer   7         31        37      cm**2      Basal area 3 
+ba4        Integer   7         41        47      cm**2      Basal area 4 
+ba5        Integer   7         51        57      cm**2      Basal area 5 
+ba6        Integer   7         61        67      cm**2      Basal area 6 
+
+********
+
+Contents and format of file, ba2006.dat, which includes values for 7 dates.
+
+Header record for ba2006.dat
+
+Variable   Variable  Variable  Starting  Ending  Units      Definition and
+           type      width     column    column             comments
+
+day1       Integer   2         11        12      d          Day of month
+month1     Character 3         13        15      m          Month
+year1      Integer   4         16        19      y          Year
+day2       Integer   2         21        22      d          Day of month
+month2     Character 3         23        25      m          Month
+year2      Integer   4         26        29      y          Year
+day3       Integer   2         31        32      d          Day of month
+month3     Character 3         33        35      m          Month
+year3      Integer   4         36        39      y          Year
+day4       Integer   2         41        42      d          Day of month
+month4     Character 3         43        45      m          Month
+year4      Integer   4         46        49      y          Year
+day5       Integer   2         51        52      d          Day of month
+month5     Character 3         53        55      m          Month
+year5      Integer   4         56        59      y          Year
+day6       Integer   2         61        62      d          Day of month
+month6     Character 3         63        65      m          Month
+year6      Integer   4         66        69      y          Year
+day7       Integer   2         71        72      d          Day of month
+month7     Character 3         73        75      m          Month
+year7      Integer   4         76        79      y          Year
+
+Data records for ba2006.dat
+
+Variable   Variable  Variable  Starting  Ending  Units      Definition and
+           type      width     column    column             comments
+
+ring       Integer   1          1         1      -          Ring number 
+tree       Integer   4          6         9      -          Tree number 
+ba1        Integer   7         11        17      cm**2      Basal area 1 
+ba2        Integer   7         21        27      cm**2      Basal area 2 
+ba3        Integer   7         31        37      cm**2      Basal area 3 
+ba4        Integer   7         41        47      cm**2      Basal area 4 
+ba5        Integer   7         51        57      cm**2      Basal area 5 
+ba6        Integer   7         61        67      cm**2      Basal area 6 
+ba7        Integer   7         71        77      cm**2      Basal area 7 
+
+********
+
+Contents and format of file, ba2007.dat, which includes values for 7 dates.
+
+Header record for ba2007.dat
+
+Variable   Variable  Variable  Starting  Ending  Units      Definition and
+           type      width     column    column             comments
+
+day1       Integer   2         11        12      d          Day of month
+month1     Character 3         13        15      m          Month
+year1      Integer   4         16        19      y          Year
+day2       Integer   2         21        22      d          Day of month
+month2     Character 3         23        25      m          Month
+year2      Integer   4         26        29      y          Year
+day3       Integer   2         31        32      d          Day of month
+month3     Character 3         33        35      m          Month
+year3      Integer   4         36        39      y          Year
+day4       Integer   2         41        42      d          Day of month
+month4     Character 3         43        45      m          Month
+year4      Integer   4         46        49      y          Year
+day5       Integer   2         51        52      d          Day of month
+month5     Character 3         53        55      m          Month
+year5      Integer   4         56        59      y          Year
+day6       Integer   2         61        62      d          Day of month
+month6     Character 3         63        65      m          Month
+year6      Integer   4         66        69      y          Year
+day7       Integer   2         71        72      d          Day of month
+month7     Character 3         73        75      m          Month
+year7      Integer   4         76        79      y          Year
+
+Data records for ba2007.dat
+
+Variable   Variable  Variable  Starting  Ending  Units      Definition and
+           type      width     column    column             comments
+
+ring       Integer   1          1         1      -          Ring number 
+tree       Integer   4          6         9      -          Tree number 
+ba1        Integer   7         11        17      cm**2      Basal area 1 
+ba2        Integer   7         21        27      cm**2      Basal area 2 
+ba3        Integer   7         31        37      cm**2      Basal area 3 
+ba4        Integer   7         41        47      cm**2      Basal area 4 
+ba5        Integer   7         51        57      cm**2      Basal area 5 
+ba6        Integer   7         61        67      cm**2      Basal area 6 
+ba7        Integer   7         71        77      cm**2      Basal area 7 
+
+********
+
+
+SAMPLE LISTINGS OF THE ASCII DATA FILES
+----------------------------------------
+ 
+ba1997.dat
+
+First listed basal area records
+
+1       2      52        52        52        52        52        52        52
+1       3     157       157       161       168       174       175       175
+
+**********
+
+Last listed basal area records
+
+5     100     114       114       116       120       124       125       125
+5     101     156       156       158       161       166       166       167
+
+**********
+
+ba1998.dat
+
+First listed basal area records
+
+1       2      52        52        52        52        52        52
+1       3     176       177       183       195       198       199
+
+**********
+
+Last listed basal area records
+
+5     100     125       126       129       132       133       133
+5     101     167       168       170       174       175       175
+
+**********
+
+ba1999.dat
+
+First listed basal area records
+
+1       2      52        52        52        52        52        52        52        52
+1       3     201       201       204       210       215       219       219       219
+
+**********
+
+Last listed basal area records
+
+5     100     133       134       136       139       140       141       141       141
+5     101     176       176       178       181       184       184       185       185
+
+**********
+
+ba2000.dat
+
+First listed basal area records
+
+1       2       0         0         0         0         0         0         0         0         0
+1       3     219       220       220       224       231       235       238       239       240
+
+**********
+
+Last listed basal area records
+
+5     100     141       141       142       144       147       148       149       149       150
+5     101     185       185       185       187       191       192       193       193       194
+
+**********
+
+ba2001.dat
+
+First listed basal area records
+
+1       2       0         0         0         0         0         0         0
+1       3     240       240       245       249       256       259       259
+
+**********
+
+Last listed basal area records
+
+5     100     150       150       153       154       157       157       157
+5     101     194       195       197       198       201       201       200
+
+**********
+
+ba2002.dat
+
+First listed basal area records
+
+1       2       0         0         0         0         0         0         0         0         0
+1       3     259       259       261       266       270       275       276       276       277
+
+**********
+
+Last listed basal area records
+
+5     100     157       156       158       160       161       163       163       163       163
+5     101     200       200       201       203       205       206       207       207       207
+
+**********
+
+ba2003.dat
+
+First listed basal area records
+
+1       2       0         0         0         0         0         0         0
+1       3     277       279       285       293       299       301       301
+
+**********
+
+Last listed basal area records
+
+5     100     163       165       168       170       171       171       170
+5     101     207       209       211       213       214       213       214
+
+**********
+
+ba2004.dat
+
+First listed basal area records
+
+1       2       0         0         0         0         0         0
+1       3     301       302       310       315       319       319
+
+**********
+
+Last listed basal area records
+
+5     100     170       172       175       175       176       176
+5     101     214       215       217       219       219       227
+
+**********
+
+ba2005.dat
+
+First listed basal area records
+
+1       2       0         0         0         0         0         0
+1       3     319       319       323       332       335       336
+
+**********
+
+Last listed basal area records
+
+5     100     176       176       178       181       181       181
+5     101     227       226       227       229       229       230
+
+**********
+
+ba2006.dat
+
+First listed basal area records
+
+1       2       0         0         0         0         0         0         0
+1       3     336       335       339       342       346       347       348
+
+**********
+
+Last listed basal area records
+
+5     100     181       180       182       183       186       186       186
+5     101     230       230       230       231       234       234       234
+
+**********
+
+ba2007.dat
+
+First listed basal area records
+
+1       2       0         0         0         0         0         0         0
+1       3     348       348       354       356       357       358       358
+
+**********
+
+Last listed basal area records
+
+5     100     186       186       190       190       191       191       191
+5     101     234       233       235       236       236       236       236
+
+**********
+
+
+SPREADSHEET SOFTWARE TO ACCESS THE DATA
+--------------------------------------------
+
+Since these basal area files are space-delimited ASCII text, 
+the files can be imported to spreadsheet software such as Excel.   
+
+
+SAS and FORTRAN CODES TO ACCESS THE DATA
+--------------------------------------------
+
+/* SAS code to read basal area data */
+
+/* DATES97 - DATES07 -  These macro variables define the number of times */
+/*                      basal area is recorded from 1997 - 2007 */
+
+%let DATES97 = 7;
+%let DATES98 = 6;
+%let DATES99 = 8;
+%let DATES00 = 9;
+%let DATES01 = 7;
+%let DATES02 = 9;
+%let DATES03 = 7;
+%let DATES04 = 6;
+%let DATES05 = 6;
+%let DATES06 = 7;
+%let DATES07 = 7;
+
+%macro basal_area;
+
+/*   Input Variables:                                            */
+/*         m_date - Date of measurement represented as ddmmmyyyy */
+/*         ring   - ring number (1-5)                            */
+/*         tree   - tree number                                  */
+/*         ba     - basal area(cm2)                              */
+
+data basal;
+
+   infile "ba&amp;YEAR..dat";
+
+   array m_date [9] m_date1-m_date9;
+   array ba [9] ba1 - ba9;
+   retain m_date1 - m_date&amp;DATES;
+   keep ring tree m_date1 - m_date&amp;DATES ba1 - ba&amp;DATES;
+
+   if _N_ = 1 then do;
+
+      /* Read header records */
+      input ///////;
+
+      /* Read dates when basal area was recorded */
+
+      ncol = 11;
+      do i = 1 to &amp;DATES;
+         input @ncol m_date[i] date9. @ ;
+         ncol = ncol + 10;
+      end; 
+      input;
+   end;
+
+   /* Read ring number, tree number, and basal area values */
+
+   input ring tree @; 
+   do i = 1 to &amp;DATES;
+      input ba[i] @; 
+   end;
+   input;   /* release pointer */
+
+proc print data = basal;
+   var ring tree m_date1-m_date&amp;DATES ba1-ba&amp;DATES;
+
+run;
+
+%mend basal_area;
+
+%let DATES = &amp;DATES97;
+%let YEAR = 1997;
+%basal_area
+
+%let DATES = &amp;DATES98;
+%let YEAR = 1998;
+%basal_area
+
+%let DATES = &amp;DATES99;
+%let YEAR = 1999;
+%basal_area
+
+%let DATES = &amp;DATES00;
+%let YEAR = 2000;
+%basal_area
+
+%let DATES = &amp;DATES01;
+%let YEAR = 2001;
+%basal_area
+
+%let DATES = &amp;DATES02;
+%let YEAR = 2002;
+%basal_area
+
+%let DATES = &amp;DATES03;
+%let YEAR = 2003;
+%basal_area
+
+%let DATES = &amp;DATES04;
+%let YEAR = 2004;
+%basal_area
+
+%let DATES = &amp;DATES05;
+%let YEAR = 2005;
+%basal_area
+  
+%let DATES = &amp;DATES06;
+%let YEAR = 2006;
+%basal_area
+  
+%let DATES = &amp;DATES07;
+%let YEAR = 2007;
+%basal_area
+
+**********
+
+
+FORTRAN code to read basal area datasets
+
+      program basal_area 
+      implicit none
+
+!     To read a file of basal area data (ba1997.dat-ba2007.dat), 
+!     modify the parameter variable ba_yr.
+
+!     The number of times each year when trees were measured
+!     and basal area values recorded varies from 6 - 9.
+!     The format of the dates is ddmmmyyyy. 
+
+!     Year   Number of dates
+!     ---------------------
+
+!     1997 - 7 
+!     1998 - 6
+!     1999 - 8
+!     2000 - 9
+!     2001 - 7
+!     2002 - 9
+!     2003 - 7
+!     2004 - 6
+!     2005 - 6
+!     2006 - 7
+!     2007 - 7
+
+!     Input variables for header record:
+!           day1-day9     - Day of the month for date1-date9
+!           month1-month9 - Month for date1-date9
+!           year1-year9   - Year for date1-date9
+
+!     Input variables for data record:
+!          ring    - ring number
+!          tree    - tree number
+!          ba1-ba9 - Basal area for date1-date9 
+
+      character(len=4), parameter :: ba_yr = "2006" 
+      integer, parameter :: max_dates = 9;
+
+      real    :: ba(max_dates)
+      integer :: day(max_dates), year(max_dates)
+      integer :: ring, tree, nrec, ioerror, num_dates, i
+
+      character(len=3) :: month(max_dates)
+      character(len=10) :: filename 
+
+      filename = "ba"//ba_yr//".dat"
+
+      if (ba_yr .eq. "1997") then
+         num_dates = 7;
+      else if (ba_yr .eq. "1998") then
+         num_dates = 6
+      else if (ba_yr .eq. "1999") then
+         num_dates = 8
+      else if (ba_yr .eq. "2000") then
+          num_dates = 9
+      else if (ba_yr .eq. "2001") then
+         num_dates = 7;
+      else if (ba_yr .eq. "2002") then
+         num_dates = 9;
+      else if (ba_yr .eq. "2003") then
+         num_dates = 7;
+      else if (ba_yr .eq. "2004") then
+         num_dates = 6;
+      else if (ba_yr .eq. "2005") then
+         num_dates = 6;
+      else if (ba_yr .eq. "2006") then
+         num_dates = 7;
+      else if (ba_yr .eq. "2007") then
+         num_dates = 7;
+      endif
+
+      open(unit = 10, file = filename,&amp;
+         &amp;status = 'old', iostat = ioerror)
+
+      if(ioerror   0) then
+         write(6,'("Error opening input file.")')
+         stop
+      endif
+
+!     input header records
+      read(10,'(///////)')
+
+!     input dates when tree was measured and basal area recorded
+      read(10,'(9x,9(1x,i2,a3,i4))')&amp;
+         &amp;(day(i), month(i), year(i), i = 1, num_dates)
+
+      if(ioerror /= 0) then
+         write(6,'("Input error reading header records.")')
+         stop
+      endif
+
+      nrec = 0   !initialize counter for summing input records
+   10 continue
+
+      read(10,'(i1,5x,i3,9(1x,f9.0))', iostat = ioerror)&amp;
+        &amp; ring, tree, (ba(i), i=1,num_dates) 
+      
+      if(ioerror   0) then
+         write(6,'("End-of-file")')
+         write(6,'("Number of data records read = ", i5)') nrec
+        stop
+      endif
+
+      write(6,'(i1,2x,i3,2x,9(f8.0,2x))')&amp;
+         &amp; ring , tree, (ba(i),i = 1,num_dates) 
+      nrec = nrec + 1
+      go to 10   !read next record
+
+      close (10)
+
+      stop
+      end
+
+**********
+]]></Descriptive_file>
+      <Data_file><![CDATA[ba1997.dat]]></Data_file>
+      <Data_file><![CDATA[ba1998.dat]]></Data_file>
+      <Data_file><![CDATA[ba1999.dat]]></Data_file>
+      <Data_file><![CDATA[ba2000.dat]]></Data_file>
+      <Data_file><![CDATA[ba2001.dat]]></Data_file>
+      <Data_file><![CDATA[ba2002.dat]]></Data_file>
+      <Data_file><![CDATA[ba2003.dat]]></Data_file>
+      <Data_file><![CDATA[ba2004.dat]]></Data_file>
+      <Data_file><![CDATA[ba2005.dat]]></Data_file>
+      <Data_file><![CDATA[ba2006.dat]]></Data_file>
+      <Data_IO_file></Data_IO_file>
+      <Initial_date_of_data_publication></Initial_date_of_data_publication>
+      <Most_recent_date_of_data_publication><![CDATA[20070710]]></Most_recent_date_of_data_publication>
+      <Data_file_location><![CDATA[http://cdiac.ess-dive.lbl.gov/ftp/FACE/ornldata/basal_area/ba1997.dat]]></Data_file_location>
+      <Data_file_location><![CDATA[http://cdiac.ess-dive.lbl.gov/ftp/FACE/ornldata/basal_area/ba1998.dat]]></Data_file_location>
+      <Data_file_location><![CDATA[http://cdiac.ess-dive.lbl.gov/ftp/FACE/ornldata/basal_area/ba1999.dat]]></Data_file_location>
+      <Data_file_location><![CDATA[http://cdiac.ess-dive.lbl.gov/ftp/FACE/ornldata/basal_area/ba2000.dat]]></Data_file_location>
+      <Data_file_location><![CDATA[http://cdiac.ess-dive.lbl.gov/ftp/FACE/ornldata/basal_area/ba2001.dat]]></Data_file_location>
+      <Data_file_location><![CDATA[http://cdiac.ess-dive.lbl.gov/ftp/FACE/ornldata/basal_area/ba2002.dat]]></Data_file_location>
+      <Data_file_location><![CDATA[http://cdiac.ess-dive.lbl.gov/ftp/FACE/ornldata/basal_area/ba2003.dat]]></Data_file_location>
+      <Data_file_location><![CDATA[http://cdiac.ess-dive.lbl.gov/ftp/FACE/ornldata/basal_area/ba2004.dat]]></Data_file_location>
+      <Data_file_location><![CDATA[http://cdiac.ess-dive.lbl.gov/ftp/FACE/ornldata/basal_area/ba2005.dat]]></Data_file_location>
+      <Data_file_location><![CDATA[http://cdiac.ess-dive.lbl.gov/ftp/FACE/ornldata/basal_area/ba2006.dat]]></Data_file_location>
+      <Total_size_of_all_files></Total_size_of_all_files>
+      <Distribution><![CDATA[external]]></Distribution>
+      <CDIAC_contact><![CDATA[Lisa Olsen; email: olsenlm@ornl.gov]]></CDIAC_contact>
+      <Notes><![CDATA[Basal area data are available for 1997 through 2006.  The number of times
+trees were measured each year varies from six to nine, and the header 
+record in each annual file gives dates when the basal area values were 
+recorded.  The files include data for 5 plots (rings) on the FACE site.]]></Notes>
+    </CDIAC>
+  </mercury>
+</metadata>

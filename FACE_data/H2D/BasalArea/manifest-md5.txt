@@ -1,0 +1,15 @@
+eb35b0100b670da12af644920b6eb9d1 data/ornl_basalarea.xml
+72fac6d002f83bfdae8a6c24adc1d9f6 data/ba2000.dat
+4fddb97a01d9c9a51caac1d0e00de17a data/ornl_basalarea_eml.xml
+61580f59a7b94bc541e4674c39f0f62f data/ba1997.dat
+ff7072d6a4e7d7c5e96bdb99d5846ca6 data/ba1999.dat
+69baa56f5da548bea565454f776f29d0 data/ba2003.dat
+92a76e746678e1f0500db641b86a3ea9 data/ba2006.dat
+dc9dac7629d7bd9c87470be29ce93a40 data/ba2004.dat
+0c776e2fe6e385b627e8aec503ee6876 data/ba2001.dat
+131636a348a77ea0100a9923309394d2 data/ba2002.dat
+a429bd6c02fad9b098444fcfa9eaf2f8 data/ba2007.dat
+ce8be533058aaf6541c9374de168c947 data/ornl_basalarea_fgdc.xml
+f7b8bd931d2fac3868464880f675acab data/ba1998.dat
+cd7f24727e1a67b3ba467bb547da88fe data/basal_area.txt
+adc5728d90bcf57e124450c57825d5c1 data/ba2005.dat
