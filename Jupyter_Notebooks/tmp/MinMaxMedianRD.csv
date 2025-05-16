@@ -1,0 +1,4 @@
+﻿,fates_allom_d2bl1,fates_maintresp_leaf_ryan1991_baserate,fates_maintresp_nonleaf_baserate,fates_cnp_store_ovrflw_frac,fates_cnp_vmax_nh4,fates_cnp_vmax_no3,fates_cnp_vmax_p
+min,0.03000,5.00E-07,7.50E-07,0.00000,3.00E-09,3.00E-09,3.00E-10
+max,0.40000,6.00E-06,1.75E-06,10.00000,2.70E-07,2.70E-07,2.70E-08
+median,0.21500,3.25E-06,1.25E-06,5.00000,2.85E-08,2.85E-08,2.85E-09

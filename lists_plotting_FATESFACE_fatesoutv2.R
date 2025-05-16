@@ -96,7 +96,7 @@ plotlist_co2 <- list(
     colrs=case_colrs,
     ylab = expression("LAI response [%]")
   ),
-  
+
   p9 = list(
     data_func = 'calc_plot_vectors',
     plot_func = 'plot_co2response_sites',
@@ -150,7 +150,7 @@ plotlist_co2 <- list(
     colrs=case_colrs,
     ylab = expression(g[c]*" response "*beta*" [-]")
   ),
-    
+
   p11 = list(
     data_func = 'calc_plot_vectors',
     plot_func = 'plot_co2response_sites',
@@ -323,6 +323,24 @@ plotlist_co2 <- list(
     data_func = 'calc_responseplot_vectors',
     resp_func = 'percent_array',
     plot_func = 'plot_co2response_sites',
+    var  = 'NPP_MinusExcessResp',
+    inpanel='caseid',
+    colrs=case_colrs,
+    ylab = expression("NPPExResp response [%]")
+  ),
+  ppnea = list(
+    data_func = 'calc_plot_vectors',
+    plot_func = 'plot_co2response_sites',
+    var  = 'NPP_MinusExcessResp',
+    ylab = expression("NPPExResp [gC " * m^-2 * " y"^-1 * "]"),
+    colrs=colrs,
+    lalpha=lalpha,
+    leg_cols=leg_cols
+  ),
+  ppneb = list(
+    data_func = 'calc_responseplot_vectors',
+    resp_func = 'percent_array',
+    plot_func = 'plot_co2response_sites',
     var  = 'NUP',
     inpanel='caseid',
     colrs=case_colrs,
@@ -334,7 +352,7 @@ plotlist_co2 <- list(
 
 # variable labels for modobs plots
 var_labs <- list(
-  
+
   # FATES_NPP
   npp = list(
     fvar_mod = 'FATES_NPP',
@@ -342,7 +360,7 @@ var_labs <- list(
     amb = list(
       ylab = expression('NPP [gC '*m^-2*y^-1*']'),
       # ylim = c(500,1500) #AW
-      ylim = c(00,2000) #BS
+      ylim = c(500,2000) #BS
     ),
     resp = list(
       ylab = expression('NPP response [gC '*m^-2*y^-1*']'),
@@ -357,7 +375,29 @@ var_labs <- list(
       ylim = c(0,2)
     )
   ),
-  
+
+  # NPP -Excess Respiration
+  npp_minusrxcessresp = list(
+    fvar_mod = 'NPP_MinusExcessResp',# 'SMINN_TO_PLANT',
+    fvar_obs = 'NPP',
+    amb = list(
+      ylab = expression('NPPExResp [gC '*m^-2*y^-1*']'),
+      ylim = c(500,2000)
+    ),
+    resp = list(
+      ylab = expression('NPPExResp response [gC '*m^-2*y^-1*']'),
+      ylim = c(0,500)
+    ),
+    perc = list(
+      ylab = 'NPPExResp response [%]',
+      ylim = c(-10,50)
+    ),
+    beta = list(
+      ylab = expression('NPPExResp '*beta*' [-]'),
+      ylim = c(0,2)
+    )
+  ),
+
   # BP
   # - need to calculate these
   bp = list(
@@ -366,7 +406,7 @@ var_labs <- list(
     amb = list(
       ylab = expression('Biomass Production [gC '*m^-2*y^-1*']'),
       # ylim = c(500,1500) #AW
-      ylim = c(00,2000) #BS
+      ylim = c(500,2000) #BS
     ),
     resp = list(
       ylab = expression('Biomass Production response [gC '*m^-2*y^-1*']'),
@@ -381,7 +421,7 @@ var_labs <- list(
       ylim = c(0,2)
     )
   ),
-  
+
   # BP inc Store C
   # - need to calculate these
   bp_store = list(
@@ -390,7 +430,7 @@ var_labs <- list(
     amb = list(
       ylab = expression('BP inc. store [gC '*m^-2*y^-1*']'),
       # ylim = c(500,1500) # AW
-      ylim = c(00,2000) # BS
+      ylim = c(500,2000) # BS
     ),
     resp = list(
       ylab = expression('BP inc. store response [gC '*m^-2*y^-1*']'),
@@ -407,7 +447,7 @@ var_labs <- list(
       ylim = c(0,3.3) #BS
     )
   ),
-  
+
   # N uptake
   nup = list(
     fvar_mod = 'NUP',# 'SMINN_TO_PLANT',
@@ -429,7 +469,7 @@ var_labs <- list(
       ylim = c(-1,1.5)
     )
   ),
-  
+
   # LAI
   lai = list(
     fvar_mod = 'TLAI',
@@ -451,7 +491,7 @@ var_labs <- list(
       ylim = c(0,1)
     )
   ),
-  
+
   # Wood biomass
   wood = list(
     fvar_mod = 'FATES_SAPWOODC',
@@ -473,7 +513,7 @@ var_labs <- list(
       ylim = c(-0.2,1.2)
     )
   ),
-    
+
   # Wood biomass production
   wood_prod = list(
     fvar_mod = 'FATES_STEM_ALLOC',
@@ -496,7 +536,7 @@ var_labs <- list(
       ylim = c(-0.5,2)
     )
   ),
-  
+
   # Leaf biomass production
   leaf_prod = list(
     fvar_mod = 'FATES_LEAF_ALLOC',
@@ -518,7 +558,7 @@ var_labs <- list(
       ylim = c(0,1.25)
     )
   ),
-  
+
   # Fine-root biomass production
   root_prod = list(
     fvar_mod = 'FATES_FROOT_ALLOC',
@@ -564,7 +604,7 @@ var_labs <- list(
     )
   ),
 
-  # Leaf : Fine-root biomass ratio 
+  # Leaf : Fine-root biomass ratio
   leaf_root_ratio = list(
     fvar_mod = 'LEAF_FROOT_ratio',
     fvar_obs = 'LEAF_FROOT_ratio',
@@ -587,8 +627,8 @@ var_labs <- list(
     )
   )#,
 
-  
-  # - no organ N or P flux variables in oputput as far as I can tell 
+
+  # - no organ N or P flux variables in oputput as far as I can tell
 #  # Wood biomass production N
 #  wood_prod_n = list(
 #    fvar_mod = 'FATES_STEMN_ALLOC',
@@ -610,7 +650,7 @@ var_labs <- list(
 #      ylim = c(-0.25,1.75)
 #    )
 #  ),
-#  
+#
 #  # Leaf biomass production N
 #  leaf_prod_n = list(
 #    fvar_mod = 'FATES_LEAFN_ALLOC',
@@ -632,7 +672,7 @@ var_labs <- list(
 #      ylim = c(-0.8,0.8)
 #    )
 #  ),
-#  
+#
 #  # Fine-root biomass production N
 #  root_prod_n = list(
 #    fvar_mod = 'FATES_FROOTN_ALLOC',
@@ -678,7 +718,7 @@ plotlist <- list(
   ylab  = expression('C Flux [gC '*m^-2*' timestep'^-1*']'),
   vvars = c('FATES_FATES_DISTURBANCE_RATE_FIRE','FATES_DISTURBANCE_RATE_LOGGING','FATES_DISTURBANCE_RATE_P2P','FATES_DISTURBANCE_RATE_P2S',
             'FATES_FATES_DISTURBANCE_RATE_POTENTIAL','FATES_DISTURBANCE_RATE_S2S','FATES_DISTURBANCE_RATE_TREEFALL'),
-  ylab  = 'Fraction of ground area disturbed [0-1]',  
+  ylab  = 'Fraction of ground area disturbed [0-1]',
   vvars = c('FATES_NCOHORTS','FATES_NPATCHES'),
   ylab  = 'FATES diagnostics [#]'
 )

@@ -40,20 +40,21 @@ source('load_obs.R')
 # paths
 root    <- '/Volumes/disk2/Research_Projects/FATES/runs/FACE/'
 root    <- '/Users/ud4/FATESMDS_analysis/outputs/runs/tests_alp' #bs
-moddate <- '230309' #'221205'
+moddate <- '2024' #'230309' #'221205'
 wdo     <-paste(root, moddate, "plots", sep = "/")
 if(!file.exists(wdo)) dir.create(wdo)
 
 
 # filename variables
 # single runs
-caseidprefix_gen <- 'Bharat_AW_logfix_api25e3sm_mf0df100_r0301' # MF=0 Log
+#caseidprefix_gen <- 'Bharat_AW_logfix_api25e3sm_mf0df100_r0301' # MF=0 Log
 #caseidprefix_gen <- 'Bharat_AW_logfix_api25e3sm_mf1df100_r0303' # MF=1 Log
 #caseidprefix_gen <- 'Bharat_AW_NoLogging_api25e3sm_r0303b' # MF=1 NoLog
-caseidprefix_gen <- 'Bharat_AW_NoLogging_api25e3sm_r0301b' # MF=0 NoLog
+#caseidprefix_gen <- 'Bharat_AW_NoLogging_api25e3sm_r0301b' # MF=0 NoLog
 #caseidprefix_gen <- 'Bharat_AW_Nalloc_mf0df100_r0911_PIDE_AgBgW' # MF=0 NoLog
-caseidprefix_gen <- 'Bharat_AW_NoLogging_api25e3sm_r1023' # MF=0 NoLog
-caseidprefix_gen <- 'Bharat_AW_Logging_api25e3sm_r1025' # MF=0 Log
+#caseidprefix_gen <- 'Bharat_AW_NoLogging_api25e3sm_r1023' # MF=0 NoLog
+#caseidprefix_gen <- 'Bharat_AW_Logging_api25e3sm_r1025' # MF=0 Log
+caseidprefix_gen <- 'FACE_1PFT_r240704_dL2FR' 
 
 caseidprefix_var <- c('C', 'CNP_ECA', 'CNP_RD' )
 caseidprefix_var <- c('', 'ECA', 'RD' ) #bs

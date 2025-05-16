@@ -61,8 +61,13 @@ add_vars_list <- list(
     name = 'LEAF_FROOT_ratio',
     sum_vars = c('FATES_LEAFC'),
     div_sumvars = c('FATES_FROOTC')
-  )
-  
+  ),
+  NPP_MinusExcessResp = list(                 
+    name = 'NPP_MinusExcessResp',           
+    sum_vars = c('FATES_NPP'),  
+    subtract_vars=c('FATES_EXCESS_RESP')      
+    #subtract_vars=c('FATES_EXCESS_RESP','FATES_NPP')      
+  )                                           
 )
 
 
